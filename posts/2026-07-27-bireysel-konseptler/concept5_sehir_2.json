@@ -1,0 +1,26 @@
+[
+  {
+    "created_at": "2026-07-27T18:18:46.186286Z",
+    "display_name": "Marketing Studio Image",
+    "id": "ad7f5126-c895-4300-a85e-37870f02636d",
+    "job_type": "marketing_studio_image",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GjexIYOMzyMR7yhhPDDUmdU7hH/hf_20260727_181846_ad7f5126-c895-4300-a85e-37870f02636d_min.webp",
+    "params": {
+      "aspect_ratio": "4:5",
+      "batch_size": 1,
+      "height": 2304,
+      "input_images": [
+        {
+          "id": "cb5b7b81-fba5-421e-a49d-911fbab7da2c",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GjexIYOMzyMR7yhhPDDUmdU7hH/cb5b7b81-fba5-421e-a49d-911fbab7da2c_resize.jpg"
+        }
+      ],
+      "prompt": "The same person and street from the reference image, same Karakoy Istanbul location now transformed into nighttime, string lights and warm glowing shopfronts, the person now standing among a lively crowd at an outdoor evening event, genuine excited expression, cinematic night color grade with indigo-teal (#5A78FF / #23BA99) ambient lighting accents mixed with warm string lights, photorealistic candid documentary style, consistent identity with the reference image. No visible logos, no readable text or signage with legible words.",
+      "resolution": "2k",
+      "width": 1856
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GjexIYOMzyMR7yhhPDDUmdU7hH/hf_20260727_181846_ad7f5126-c895-4300-a85e-37870f02636d.png",
+    "status": "completed"
+  }
+]

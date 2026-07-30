@@ -25,9 +25,15 @@ Kod: `/Volumes/Okantosh/projects/ideavoll/lovable`
   `#23BA99`. Üretilen görsellerde bu paleti referans al, ama bire bir şart
   değil — pazarlama içeriği daha canlı/dikkat çekici olabilir.
 
-> Hedef kitle, marka tonu (samimi/eğlenceli mi, ciddi mi), öncelikli
-> persona (etkinlik katılımcısı mı, organizatör mü) net değil — bir
-> kampanya başlamadan önce bunu netleştir, tahmin etme.
+> Öncelikli persona netleşti: **bireysel kullanıcı / etkinlik katılımcısı**.
+> Organizatör/kurumsal taraf (business hesabı, KYC, wallet vb.) şu an için
+> içerik kapsamı **dışında** — bir sonraki aşamada ele alınacak. Marka tonu
+> (samimi/eğlenceli mi, ciddi mi) hâlâ net değil — bir kampanya başlamadan
+> önce bunu netleştir, tahmin etme.
+
+Marka renk/tipografi/logo referansı için bkz. `brand/design-system.md`
+(kod kaynağından — `../lovable/lib/core/theme/` — çıkarıldı) ve
+`brand/logo.png`.
 
 ## Bu Klasörün Amacı
 

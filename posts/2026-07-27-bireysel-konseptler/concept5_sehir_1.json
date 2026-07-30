@@ -1,0 +1,20 @@
+[
+  {
+    "created_at": "2026-07-27T18:17:09.614386Z",
+    "display_name": "Marketing Studio Image",
+    "id": "d0b8b86b-846c-4ff8-841d-0aabcfef3db2",
+    "job_type": "marketing_studio_image",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GjexIYOMzyMR7yhhPDDUmdU7hH/hf_20260727_181709_d0b8b86b-846c-4ff8-841d-0aabcfef3db2_min.webp",
+    "params": {
+      "aspect_ratio": "4:5",
+      "batch_size": 1,
+      "height": 2304,
+      "input_images": [],
+      "prompt": "A relaxed young adult sitting alone at an outdoor cafe table in Karakoy, Istanbul, during golden daytime light, holding a coffee cup, calm content expression, cobblestone street and a glimpse of the Bosphorus in the background, photorealistic lifestyle photography, natural daylight color grade with a subtle warm tone, shallow depth of field. No visible logos, no readable text or signage with legible words.",
+      "resolution": "2k",
+      "width": 1856
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GjexIYOMzyMR7yhhPDDUmdU7hH/hf_20260727_181709_d0b8b86b-846c-4ff8-841d-0aabcfef3db2.png",
+    "status": "completed"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "created_at": "2026-07-29T14:44:19.62533Z",
+    "display_name": "Marketing Studio Image",
+    "id": "dc08b0af-efda-4443-99d2-3bd0b4f156bb",
+    "job_type": "marketing_studio_image",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GjexIYOMzyMR7yhhPDDUmdU7hH/hf_20260729_144419_dc08b0af-efda-4443-99d2-3bd0b4f156bb_min.webp",
+    "params": {
+      "aspect_ratio": "4:5",
+      "batch_size": 1,
+      "height": 2304,
+      "input_images": [],
+      "prompt": "A lively amateur sports event at dusk in an urban Istanbul setting, friends playing five-a-side football on an outdoor court, motion blur on the ball, warm string lights around the court mixing with indigo blue (#5A78FF) and teal (#23BA99) ambient lighting, candid joyful expressions, photorealistic, editorial lifestyle photography style. No visible logos, no readable text, no signage with legible words.",
+      "resolution": "2k",
+      "width": 1856
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GjexIYOMzyMR7yhhPDDUmdU7hH/hf_20260729_144419_dc08b0af-efda-4443-99d2-3bd0b4f156bb.png",
+    "status": "completed"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "created_at": "2026-07-27T18:18:42.716958Z",
+    "display_name": "Marketing Studio Image",
+    "id": "31fb9be5-79ad-453f-97bb-b54e80d832d7",
+    "job_type": "marketing_studio_image",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GjexIYOMzyMR7yhhPDDUmdU7hH/hf_20260727_181842_31fb9be5-79ad-453f-97bb-b54e80d832d7_min.webp",
+    "params": {
+      "aspect_ratio": "4:5",
+      "batch_size": 1,
+      "height": 2304,
+      "input_images": [
+        {
+          "id": "a47d1e52-5b56-4d4e-a815-e4a6d8a56e6a",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3GjexIYOMzyMR7yhhPDDUmdU7hH/a47d1e52-5b56-4d4e-a815-e4a6d8a56e6a_resize.jpg"
+        }
+      ],
+      "prompt": "The same woman from the reference image, now at a lively outdoor evening event in Istanbul, genuine wide joyful smile, arms slightly raised in excitement, surrounded by a warm blurred crowd and string lights, cinematic color grade with indigo-teal (#5A78FF / #23BA99) ambient lighting accents, photorealistic candid documentary style, consistent identity and hairstyle with the reference image. No visible logos, no readable text.",
+      "resolution": "2k",
+      "width": 1856
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GjexIYOMzyMR7yhhPDDUmdU7hH/hf_20260727_181842_31fb9be5-79ad-453f-97bb-b54e80d832d7.png",
+    "status": "completed"
+  }
+]

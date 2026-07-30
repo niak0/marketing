@@ -1,0 +1,20 @@
+[
+  {
+    "created_at": "2026-07-29T14:44:26.76727Z",
+    "display_name": "Marketing Studio Image",
+    "id": "bf942f25-6e82-4d58-a67d-4e750b59623c",
+    "job_type": "marketing_studio_image",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GjexIYOMzyMR7yhhPDDUmdU7hH/hf_20260729_144426_bf942f25-6e82-4d58-a67d-4e750b59623c_min.webp",
+    "params": {
+      "aspect_ratio": "4:5",
+      "batch_size": 1,
+      "height": 2304,
+      "input_images": [],
+      "prompt": "An intimate art gallery opening event in Istanbul at evening, young adults viewing contemporary artwork on walls, soft gallery lighting mixed with indigo blue (#5A78FF) and teal (#23BA99) ambient accent lighting, elegant relaxed mood, shallow depth of field, photorealistic, editorial lifestyle photography style. No visible logos, no readable text, no signage with legible words.",
+      "resolution": "2k",
+      "width": 1856
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GjexIYOMzyMR7yhhPDDUmdU7hH/hf_20260729_144426_bf942f25-6e82-4d58-a67d-4e750b59623c.png",
+    "status": "completed"
+  }
+]

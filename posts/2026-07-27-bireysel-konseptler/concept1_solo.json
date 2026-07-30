@@ -1,0 +1,20 @@
+[
+  {
+    "created_at": "2026-07-27T18:16:59.297403Z",
+    "display_name": "Marketing Studio Image",
+    "id": "17593dda-8be0-4028-ab3c-b2dfea5657e3",
+    "job_type": "marketing_studio_image",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GjexIYOMzyMR7yhhPDDUmdU7hH/hf_20260727_181659_17593dda-8be0-4028-ab3c-b2dfea5657e3_min.webp",
+    "params": {
+      "aspect_ratio": "4:5",
+      "batch_size": 1,
+      "height": 2304,
+      "input_images": [],
+      "prompt": "A confident young adult in Istanbul, alone, walking with a warm relaxed genuine smile into an outdoor evening event space filled with soft string lights and a crowd of people gently blurred in the background. Cinematic golden-hour-to-blue-hour transition lighting. Color grade emphasizes deep indigo blue (#5A78FF) and teal (#23BA99) ambient lighting accents mixed with warm string lights. Shallow depth of field, photorealistic, editorial lifestyle photography style. No visible logos, no readable text, no signage with legible words.",
+      "resolution": "2k",
+      "width": 1856
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GjexIYOMzyMR7yhhPDDUmdU7hH/hf_20260727_181659_17593dda-8be0-4028-ab3c-b2dfea5657e3.png",
+    "status": "completed"
+  }
+]

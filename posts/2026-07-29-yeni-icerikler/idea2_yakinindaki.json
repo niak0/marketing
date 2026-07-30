@@ -1,0 +1,20 @@
+[
+  {
+    "created_at": "2026-07-29T14:44:50.694933Z",
+    "display_name": "Marketing Studio Image",
+    "id": "4072781b-efa0-4054-b99b-57fd3586ce0b",
+    "job_type": "marketing_studio_image",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GjexIYOMzyMR7yhhPDDUmdU7hH/hf_20260729_144450_4072781b-efa0-4054-b99b-57fd3586ce0b_min.webp",
+    "params": {
+      "aspect_ratio": "4:5",
+      "batch_size": 1,
+      "height": 2304,
+      "input_images": [],
+      "prompt": "Close-up over-the-shoulder shot of a young adult holding a smartphone displaying a stylized map interface with a glowing location pin, softly blurred, in the background a warmly lit Istanbul street with an outdoor event visible a few steps away, color grade emphasizes indigo blue (#5A78FF) and teal (#23BA99) accents mixed with warm streetlights, photorealistic, editorial lifestyle photography style. Phone screen UI shown only as abstract colored shapes and blurred glow, no legible text or icons. No visible logos, no readable brand text.",
+      "resolution": "2k",
+      "width": 1856
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GjexIYOMzyMR7yhhPDDUmdU7hH/hf_20260729_144450_4072781b-efa0-4054-b99b-57fd3586ce0b.png",
+    "status": "completed"
+  }
+]

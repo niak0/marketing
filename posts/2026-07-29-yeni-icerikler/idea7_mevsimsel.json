@@ -1,0 +1,20 @@
+[
+  {
+    "created_at": "2026-07-29T14:45:17.680751Z",
+    "display_name": "Marketing Studio Image",
+    "id": "0b974d5b-1832-412a-b512-4abb4ed0a46e",
+    "job_type": "marketing_studio_image",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GjexIYOMzyMR7yhhPDDUmdU7hH/hf_20260729_144517_0b974d5b-1832-412a-b512-4abb4ed0a46e_min.webp",
+    "params": {
+      "aspect_ratio": "4:5",
+      "batch_size": 1,
+      "height": 2304,
+      "input_images": [],
+      "prompt": "A warm summer evening outdoor event in Istanbul near the Bosphorus, golden hour transitioning to blue hour, relaxed young adults socializing with drinks, string lights and warm ambient glow mixed with indigo blue (#5A78FF) and teal (#23BA99) accents in the sky and lighting, cinematic photorealistic editorial lifestyle photography. No visible logos, no readable text.",
+      "resolution": "2k",
+      "width": 1856
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GjexIYOMzyMR7yhhPDDUmdU7hH/hf_20260729_144517_0b974d5b-1832-412a-b512-4abb4ed0a46e.png",
+    "status": "completed"
+  }
+]

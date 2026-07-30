@@ -1,0 +1,20 @@
+[
+  {
+    "created_at": "2026-07-27T18:25:14.809534Z",
+    "display_name": "Marketing Studio Image",
+    "id": "f55e5526-de3a-41c8-a3f3-3a2e23d9f464",
+    "job_type": "marketing_studio_image",
+    "min_result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GjexIYOMzyMR7yhhPDDUmdU7hH/hf_20260727_182514_f55e5526-de3a-41c8-a3f3-3a2e23d9f464_min.webp",
+    "params": {
+      "aspect_ratio": "4:5",
+      "batch_size": 1,
+      "height": 2304,
+      "input_images": [],
+      "prompt": "Minimal modern flat-design graphic illustration of a smartphone floating against a dark background (#171717), its screen showing an abstract calendar grid where empty cells transform into colorful glowing rounded blocks representing a full week of plans, using a smooth gradient from deep indigo blue (#374FC7) to teal green (#23BA99) plus solid accent blue (#5A78FF). Soft ambient glow, subtle depth, clean vector-like shapes, no readable text, no numbers, no words, no logos, no icons resembling real brand logos, purely abstract colored blocks and soft shapes. Premium tech-brand aesthetic.",
+      "resolution": "2k",
+      "width": 1856
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GjexIYOMzyMR7yhhPDDUmdU7hH/hf_20260727_182514_f55e5526-de3a-41c8-a3f3-3a2e23d9f464.png",
+    "status": "completed"
+  }
+]

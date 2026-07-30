@@ -12,6 +12,7 @@
 *.gif
 *.webp
 *.mp4
+!brand/*.png
 .DS_Store
 .idea/
 .vscode/
