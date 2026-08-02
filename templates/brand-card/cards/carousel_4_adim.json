@@ -1,0 +1,52 @@
+{
+  "tag": "#ideavoll",
+  "cta": "Etkinlik Oluştur",
+  "slides": [
+    {
+      "role": "hook",
+      "headline": "Aklındaki etkinlik<br><em>4 adımda</em> yayında.",
+      "lede": "Sabah koşusu, ebru atölyesi, kahve sohbeti — <b>uygulamanın gerçek ekranlarıyla</b> adım adım.",
+      "swipe": "kaydır",
+      "photo": "posts/2026-07-30-etkinlik-olusturma-reklam/kapak_sabah_kosusu.png"
+    },
+    {
+      "role": "step",
+      "step": "1",
+      "headline": "Kategorisini seç.",
+      "lede": "Spor, sanat, sohbet… Etkinliğin hangi dünyaya ait olduğunu söyle.",
+      "swipe": "sonraki adım",
+      "device_screenshot": "posts/2026-07-30-etkinlik-olusturma-reklam/step1_kategori_secimi.png"
+    },
+    {
+      "role": "step",
+      "step": "2",
+      "headline": "Adını ve saatini yaz.",
+      "lede": "Bir kapak fotoğrafı, kısa bir açıklama. Uzun uzun düşünmene gerek yok.",
+      "swipe": "sonraki adım",
+      "device_screenshot": "posts/2026-07-30-etkinlik-olusturma-reklam/step2_etkinlik_bilgisi_dolu.png"
+    },
+    {
+      "role": "step",
+      "step": "3",
+      "headline": "Konumu işaretle.",
+      "lede": "Yakınındaki insanlar etkinliğini tam olarak burada görecek.",
+      "swipe": "son adım",
+      "device_screenshot": "posts/2026-07-30-etkinlik-olusturma-reklam/step3_konum_secildi.png"
+    },
+    {
+      "role": "step",
+      "step": "4",
+      "headline": "Yayınla.",
+      "lede": "Hepsi bu. Etkinliğin artık çevrendekilerin akışında.",
+      "swipe": "bitti",
+      "device_screenshot": "posts/2026-07-30-etkinlik-olusturma-reklam/step4_ozet.png"
+    },
+    {
+      "role": "cta",
+      "headline": "Sıra sende.",
+      "lede": "İlk etkinliğini oluştur, yakınındakiler katılsın.",
+      "cta": "Etkinlik Oluştur",
+      "tag": "#ideavoll"
+    }
+  ]
+}
