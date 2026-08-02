@@ -1,0 +1,982 @@
+[
+  {
+    "id": "av-01-elif",
+    "filename": "av-01-elif.jpg",
+    "folder": "avatars",
+    "model": "text2image_soul_v2",
+    "aspect_ratio": "1:1",
+    "width": 1024,
+    "height": 1024,
+    "prompt": "Candid half-length portrait of a 27-year-old Turkish woman with shoulder-length wavy dark brown hair, light natural makeup, wearing an oversized beige linen shirt with a faint clay stain on the sleeve, standing in a sunlit ceramics studio with blurred shelves of unglazed pottery behind her, soft relaxed half-smile looking slightly off-camera, warm late afternoon window light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "av-02-mert",
+    "filename": "av-02-mert.jpg",
+    "folder": "avatars",
+    "model": "text2image_soul_v2",
+    "aspect_ratio": "1:1",
+    "width": 1024,
+    "height": 1024,
+    "prompt": "Candid portrait of a 31-year-old Turkish man with short black hair and light stubble, wearing a charcoal running t-shirt, slightly out of breath with damp hairline, standing on a Bosphorus seaside promenade at sunrise, blurred water and distant bridge behind him, genuine relaxed smile, cool early morning light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "av-03-zeynep",
+    "filename": "av-03-zeynep.jpg",
+    "folder": "avatars",
+    "model": "text2image_soul_v2",
+    "aspect_ratio": "1:1",
+    "width": 1024,
+    "height": 1024,
+    "prompt": "Candid portrait of a 25-year-old Turkish woman with long straight black hair and small gold hoop earrings, wearing a dark apron over a white tee with faint blue and red pigment marks on it, sitting in a traditional marbling art workshop, blurred wooden trays and brushes behind her, calm confident expression, soft diffused daylight from a large window, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "av-04-can",
+    "filename": "av-04-can.jpg",
+    "folder": "avatars",
+    "model": "text2image_soul_v2",
+    "aspect_ratio": "1:1",
+    "width": 1024,
+    "height": 1024,
+    "prompt": "Candid portrait of a 29-year-old Turkish man with curly brown hair and thin-framed glasses, wearing a heather grey sweatshirt, sitting at a wooden cafe table with blurred board game boxes stacked beside him, leaning back mid-laugh, warm indoor tungsten light mixed with window daylight, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "av-05-selin",
+    "filename": "av-05-selin.jpg",
+    "folder": "avatars",
+    "model": "text2image_soul_v2",
+    "aspect_ratio": "1:1",
+    "width": 1024,
+    "height": 1024,
+    "prompt": "Candid portrait of a 24-year-old Turkish woman with a chin-length auburn bob and round tortoiseshell glasses, wearing a mustard knit cardigan, sitting by a window in a bookshop cafe with blurred bookshelves behind her, holding a glass of Turkish tea, quiet amused expression, warm afternoon light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "av-06-burak",
+    "filename": "av-06-burak.jpg",
+    "folder": "avatars",
+    "model": "text2image_soul_v2",
+    "aspect_ratio": "1:1",
+    "width": 1024,
+    "height": 1024,
+    "prompt": "Candid portrait of a 33-year-old Turkish man with sun-tanned skin, a full dark beard and a faded olive cap, wearing a technical hiking shirt with rolled sleeves, standing on a forest trail with blurred pine trees and dappled sunlight behind him, easy weathered smile, bright natural daylight, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "av-07-deniz",
+    "filename": "av-07-deniz.jpg",
+    "folder": "avatars",
+    "model": "text2image_soul_v2",
+    "aspect_ratio": "1:1",
+    "width": 1024,
+    "height": 1024,
+    "prompt": "Candid portrait of a 26-year-old Turkish man with messy medium-length dark hair, wearing a washed black tee with a vintage film camera strap across his chest, standing in a narrow old Istanbul street with blurred colorful timber houses behind him, mid-conversation expression, overcast soft light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "av-08-aysenur",
+    "filename": "av-08-aysenur.jpg",
+    "folder": "avatars",
+    "model": "text2image_soul_v2",
+    "aspect_ratio": "1:1",
+    "width": 1024,
+    "height": 1024,
+    "prompt": "Candid portrait of a 30-year-old Turkish woman with dark hair in a low bun, minimal or no makeup, wearing a plain off-white cotton tee, sitting cross-legged on a wooden deck with blurred greenery and morning haze behind her, serene grounded expression, gentle early morning light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "av-09-emre",
+    "filename": "av-09-emre.jpg",
+    "folder": "avatars",
+    "model": "text2image_soul_v2",
+    "aspect_ratio": "1:1",
+    "width": 1024,
+    "height": 1024,
+    "prompt": "Candid portrait of a 28-year-old Turkish man with long wavy dark hair tucked behind his ears and light beard, wearing an unbuttoned sand-colored linen shirt over a tee, the neck of an acoustic guitar visible at the edge of frame, sitting on a rooftop at golden hour with blurred city rooftops behind him, easy warm smile, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "av-10-merve",
+    "filename": "av-10-merve.jpg",
+    "folder": "avatars",
+    "model": "text2image_soul_v2",
+    "aspect_ratio": "1:1",
+    "width": 1024,
+    "height": 1024,
+    "prompt": "Candid portrait of a 32-year-old Turkish woman with shoulder-length copper-red hair and light freckles, wearing a forest green summer dress, standing in a leafy garden with blurred plants and a wooden table behind her, laughing naturally with head slightly tilted, dappled sunlight through leaves, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "av-11-kerem",
+    "filename": "av-11-kerem.jpg",
+    "folder": "avatars",
+    "model": "text2image_soul_v2",
+    "aspect_ratio": "1:1",
+    "width": 1024,
+    "height": 1024,
+    "prompt": "Candid portrait of a 27-year-old Turkish man with short neat dark hair and clear-framed glasses, wearing a light denim shirt, sitting at a cafe table with blurred bookshelves and a laptop edge behind him, attentive friendly expression looking at camera, soft window light from the side, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "av-12-gizem",
+    "filename": "av-12-gizem.jpg",
+    "folder": "avatars",
+    "model": "text2image_soul_v2",
+    "aspect_ratio": "1:1",
+    "width": 1024,
+    "height": 1024,
+    "prompt": "Candid portrait of a 29-year-old Turkish woman with dark hair in a loose bun held by a pencil, wearing a paint-flecked denim apron over a striped shirt, standing in a small art studio with blurred watercolor paper and jars of brushes behind her, warm shy smile, bright north-facing daylight, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "av-13-onur",
+    "filename": "av-13-onur.jpg",
+    "folder": "avatars",
+    "model": "text2image_soul_v2",
+    "aspect_ratio": "1:1",
+    "width": 1024,
+    "height": 1024,
+    "prompt": "Candid portrait of a 35-year-old Turkish man with short salt-and-pepper hair and trimmed beard, wearing a simple navy cycling jersey with the collar unzipped, standing in a park with a bicycle handlebar blurred in the foreground, calm friendly expression, clear morning light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "av-14-irem",
+    "filename": "av-14-irem.jpg",
+    "folder": "avatars",
+    "model": "text2image_soul_v2",
+    "aspect_ratio": "1:1",
+    "width": 1024,
+    "height": 1024,
+    "prompt": "Candid portrait of a 26-year-old Turkish woman with sun-lightened brown hair in a high ponytail, wearing a coral sports top, standing on an Aegean beach with blurred sea and volleyball net behind her, wide genuine smile squinting slightly in the sun, strong late afternoon light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "av-15-ahmet",
+    "filename": "av-15-ahmet.jpg",
+    "folder": "avatars",
+    "model": "text2image_soul_v2",
+    "aspect_ratio": "1:1",
+    "width": 1024,
+    "height": 1024,
+    "prompt": "Candid portrait of a 30-year-old Turkish man with a neatly trimmed beard and a dark grey beanie, wearing a denim work apron over a black tee, standing behind a specialty coffee bar with blurred brewing equipment and shelves behind him, quiet focused half-smile, warm interior light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "av-16-ceren",
+    "filename": "av-16-ceren.jpg",
+    "folder": "avatars",
+    "model": "text2image_soul_v2",
+    "aspect_ratio": "1:1",
+    "width": 1024,
+    "height": 1024,
+    "prompt": "Candid portrait of a 28-year-old Turkish woman with voluminous dark curly hair and gold hoop earrings, wearing a deep red wrap top, standing in a wooden-floored dance studio with blurred mirrors and warm string lights behind her, bright open laugh, warm evening indoor light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "av-17-yusuf",
+    "filename": "av-17-yusuf.jpg",
+    "folder": "avatars",
+    "model": "text2image_soul_v2",
+    "aspect_ratio": "1:1",
+    "width": 1024,
+    "height": 1024,
+    "prompt": "Candid portrait of a 34-year-old Turkish man with short cropped dark hair, sunglasses hanging from his shirt collar, wearing a light grey hiking tee with a backpack strap on one shoulder, standing on a misty mountain trail with blurred fir trees behind him, content easy expression, cool overcast mountain light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "av-18-sude",
+    "filename": "av-18-sude.jpg",
+    "folder": "avatars",
+    "model": "text2image_soul_v2",
+    "aspect_ratio": "1:1",
+    "width": 1024,
+    "height": 1024,
+    "prompt": "Candid portrait of a 23-year-old Turkish woman with wet dark hair pushed back, a trace of sunscreen on her cheekbone, wearing a simple black swim top with a towel over her shoulder, standing on a pebble beach with blurred turquoise sea and distant mountains behind her, bright playful smile, crisp early morning light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "ev-01-bebek-kosu",
+    "filename": "ev-01-bebek-kosu.jpg",
+    "folder": "events",
+    "model": "soul_location",
+    "aspect_ratio": "16:9",
+    "width": 1920,
+    "height": 1080,
+    "prompt": "Wide shot of a small group of runners seen from behind jogging along a Bosphorus seaside promenade at sunrise, calm water and a distant suspension bridge in soft haze, empty benches and plane trees along the path, long low shadows, cool blue-gold dawn light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "ev-02-seramik-boyama",
+    "filename": "ev-02-seramik-boyama.jpg",
+    "folder": "events",
+    "model": "soul_location",
+    "aspect_ratio": "16:9",
+    "width": 1920,
+    "height": 1080,
+    "prompt": "Overhead-angled wide shot of a wooden workshop table covered with plain bisque ceramic mugs and plates being hand-painted, small jars of blue and terracotta glaze, brushes resting on a cloth, two pairs of hands visible mid-work at the edges of frame, warm afternoon window light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "ev-03-ebru-atolye",
+    "filename": "ev-03-ebru-atolye.jpg",
+    "folder": "events",
+    "model": "soul_location",
+    "aspect_ratio": "16:9",
+    "width": 1920,
+    "height": 1080,
+    "prompt": "Close wide shot of a traditional Turkish marbling tray filled with dark water, swirls of blue crimson and ochre pigment spreading across the surface, a thin metal stylus and a horsehair brush resting on the wooden rim, drying marbled papers stacked out of focus behind, soft diffused daylight, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "ev-04-kutu-oyunu",
+    "filename": "ev-04-kutu-oyunu.jpg",
+    "folder": "events",
+    "model": "soul_location",
+    "aspect_ratio": "16:9",
+    "width": 1920,
+    "height": 1080,
+    "prompt": "Wide shot of a long wooden cafe table at night covered with an in-progress board game, wooden tokens dice and card stacks, glasses of tea and beer around it, several pairs of hands and forearms reaching in, faces out of frame, warm tungsten pendant lights overhead, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "ev-05-satranc",
+    "filename": "ev-05-satranc.jpg",
+    "folder": "events",
+    "model": "soul_location",
+    "aspect_ratio": "16:9",
+    "width": 1920,
+    "height": 1080,
+    "prompt": "Wide shot of several chess boards set up on stone park tables under plane trees, mid-game positions with captured pieces beside the boards, a chess clock in shallow focus, blurred seated players seen from waist down in the background, dappled late afternoon sunlight, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "ev-06-kitap-kulubu",
+    "filename": "ev-06-kitap-kulubu.jpg",
+    "folder": "events",
+    "model": "soul_location",
+    "aspect_ratio": "16:9",
+    "width": 1920,
+    "height": 1080,
+    "prompt": "Wide shot of a loose circle of people sitting on a seaside stone terrace at dusk seen from behind, each holding a paperback, thermos and glass tea cups on the ground between them, calm sea and the Istanbul skyline silhouette across the water, warm fading golden light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "ev-07-film-gecesi",
+    "filename": "ev-07-film-gecesi.jpg",
+    "folder": "events",
+    "model": "soul_location",
+    "aspect_ratio": "16:9",
+    "width": 1920,
+    "height": 1080,
+    "prompt": "Wide shot of a rooftop terrace at night with a white projection sheet glowing softly, rows of floor cushions and low stools facing it, string lights overhead, bowls of snacks on a side table, silhouetted backs of a few seated viewers, city lights beyond the parapet, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "ev-08-belgrad-yuruyus",
+    "filename": "ev-08-belgrad-yuruyus.jpg",
+    "folder": "events",
+    "model": "soul_location",
+    "aspect_ratio": "16:9",
+    "width": 1920,
+    "height": 1080,
+    "prompt": "Wide shot of a soft dirt trail winding through a dense deciduous forest with shafts of morning sunlight through the canopy, a small group of hikers with daypacks walking away from the camera far down the trail, fallen leaves and ferns along the edges, cool green morning light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "ev-09-analog-foto-balat",
+    "filename": "ev-09-analog-foto-balat.jpg",
+    "folder": "events",
+    "model": "soul_location",
+    "aspect_ratio": "16:9",
+    "width": 1920,
+    "height": 1080,
+    "prompt": "Wide shot of a steep narrow cobblestone street lined with weathered pastel-colored timber houses, laundry lines strung overhead, a person from behind in the mid-ground raising a vintage 35mm film camera to their eye, warm late afternoon side light and deep shadows, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "ev-10-sabah-yoga",
+    "filename": "ev-10-sabah-yoga.jpg",
+    "folder": "events",
+    "model": "soul_location",
+    "aspect_ratio": "16:9",
+    "width": 1920,
+    "height": 1080,
+    "prompt": "Wide shot of yoga mats arranged in a loose semicircle on a wooden waterfront deck at early morning, a few practitioners seen from behind sitting cross-legged facing the calm sea, mist over the water, potted plants at the edge of the deck, pale soft dawn light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "ev-11-akustik-bulusma",
+    "filename": "ev-11-akustik-bulusma.jpg",
+    "folder": "events",
+    "model": "soul_location",
+    "aspect_ratio": "16:9",
+    "width": 1920,
+    "height": 1080,
+    "prompt": "Wide shot of a small courtyard at night lit by warm string lights, an acoustic guitar and a cajón resting on stools at the center, people seated on steps and low walls around it seen from behind and in silhouette, ivy on the brick wall, intimate warm evening atmosphere, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "ev-12-macka-piknik",
+    "filename": "ev-12-macka-piknik.jpg",
+    "folder": "events",
+    "model": "soul_location",
+    "aspect_ratio": "16:9",
+    "width": 1920,
+    "height": 1080,
+    "prompt": "Wide high-angle shot of colorful picnic blankets spread on a grassy park slope, wicker baskets watermelon slices simit and glass tea cups laid out, a football and a bluetooth speaker to one side, people seated and lying around the edges of frame from behind, tall trees and city towers in the hazy background, warm midday sun, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "ev-13-vegan-mutfak",
+    "filename": "ev-13-vegan-mutfak.jpg",
+    "folder": "events",
+    "model": "soul_location",
+    "aspect_ratio": "16:9",
+    "width": 1920,
+    "height": 1080,
+    "prompt": "Wide shot of a bright home kitchen counter covered with prepped vegetables, chickpeas, fresh herbs, olive oil and mezze bowls in progress, two pairs of hands chopping and plating at the edges of frame, a well-used wooden board and knives, soft natural light from a nearby window, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "ev-14-adalar-bisiklet",
+    "filename": "ev-14-adalar-bisiklet.jpg",
+    "folder": "events",
+    "model": "soul_location",
+    "aspect_ratio": "16:9",
+    "width": 1920,
+    "height": 1080,
+    "prompt": "Wide shot of a quiet island road curving between pine trees and old wooden mansions, several bicycles leaning on a low stone wall in the foreground, a glimpse of blue sea and a ferry far below, no cars, bright clear late summer light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "ev-15-gun-batimi-yuruyus",
+    "filename": "ev-15-gun-batimi-yuruyus.jpg",
+    "folder": "events",
+    "model": "soul_location",
+    "aspect_ratio": "16:9",
+    "width": 1920,
+    "height": 1080,
+    "prompt": "Wide shot of a seaside walking path at sunset with a few people strolling away from the camera, the silhouette of a historic tower on a small islet in the water, fishermen's rods along the railing, warm orange and violet sky reflecting on the calm sea, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "ev-16-comlek-carki",
+    "filename": "ev-16-comlek-carki.jpg",
+    "folder": "events",
+    "model": "soul_location",
+    "aspect_ratio": "16:9",
+    "width": 1920,
+    "height": 1080,
+    "prompt": "Tight wide shot of a potter's wheel in motion with wet grey clay being centered, two clay-covered hands cupping the spinning form, water bowl and shaping tools beside the wheel, splashes of slip on the apron and floor, focused warm studio light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "ev-17-sokak-lezzet",
+    "filename": "ev-17-sokak-lezzet.jpg",
+    "folder": "events",
+    "model": "soul_location",
+    "aspect_ratio": "16:9",
+    "width": 1920,
+    "height": 1080,
+    "prompt": "Wide shot of a bustling narrow market street in the evening, stalls of olives cheese pickles and dried fruit, hanging bulbs above, a group walking through the crowd seen from behind, motion blur on passersby, warm mixed street light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "ev-18-kilyos-yuzme",
+    "filename": "ev-18-kilyos-yuzme.jpg",
+    "folder": "events",
+    "model": "soul_location",
+    "aspect_ratio": "16:9",
+    "width": 1920,
+    "height": 1080,
+    "prompt": "Wide shot of an open Black Sea beach at early morning with gentle breaking waves, two swimmers far out in the water, towels and a pair of sandals left on the wet sand in the foreground, empty shoreline stretching into haze, cool silvery dawn light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "ev-19-kroki-bulusma",
+    "filename": "ev-19-kroki-bulusma.jpg",
+    "folder": "events",
+    "model": "soul_location",
+    "aspect_ratio": "16:9",
+    "width": 1920,
+    "height": 1080,
+    "prompt": "Wide shot of people sitting on stone steps in an old harbor district, sketchbooks open on their knees with loose pencil drawings of the street visible, pencils and erasers beside them, faces out of frame, historic stone facades and a tram rail in the background, soft midday light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "ev-20-riva-kamp",
+    "filename": "ev-20-riva-kamp.jpg",
+    "folder": "events",
+    "model": "soul_location",
+    "aspect_ratio": "16:9",
+    "width": 1920,
+    "height": 1080,
+    "prompt": "Wide shot of two small tents pitched on a grassy bluff above a river mouth at dusk, a compact camp stove and folding chairs arranged around a low fire, backpacks leaning together, the sea horizon glowing behind, deep blue twilight sky, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "ev-21-dil-pratigi",
+    "filename": "ev-21-dil-pratigi.jpg",
+    "folder": "events",
+    "model": "soul_location",
+    "aspect_ratio": "16:9",
+    "width": 1920,
+    "height": 1080,
+    "prompt": "Wide shot of a long cafe table with people seated around it in animated conversation seen from chest down, notebooks phones and coffee cups scattered across the table, hands gesturing mid-sentence, warm pendant lights and a brick wall behind, cozy evening interior light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "ev-22-urban-sketching",
+    "filename": "ev-22-urban-sketching.jpg",
+    "folder": "events",
+    "model": "soul_location",
+    "aspect_ratio": "16:9",
+    "width": 1920,
+    "height": 1080,
+    "prompt": "Wide shot of a restored Ottoman-era street with white-and-timber facades and flower boxes, a person seated on a low stool in the foreground from behind with an open sketchbook showing a line drawing of the buildings, watercolor tin beside them, bright clear morning light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "ev-23-eymir-bisiklet",
+    "filename": "ev-23-eymir-bisiklet.jpg",
+    "folder": "events",
+    "model": "soul_location",
+    "aspect_ratio": "16:9",
+    "width": 1920,
+    "height": 1080,
+    "prompt": "Wide shot of a flat lakeside cycling path lined with poplars, a group of cyclists riding away from the camera in single file, still lake water reflecting the trees, dry golden grass along the verge, crisp early morning light with long shadows, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "ev-24-suluboya",
+    "filename": "ev-24-suluboya.jpg",
+    "folder": "events",
+    "model": "soul_location",
+    "aspect_ratio": "16:9",
+    "width": 1920,
+    "height": 1080,
+    "prompt": "Overhead wide shot of a studio table with several watercolor works in progress on cotton paper, palettes with mixed washes, jars of murky water, round brushes and paper towels, one hand holding a loaded brush at the frame edge, even diffused daylight, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "ev-25-segmenler-kosu",
+    "filename": "ev-25-segmenler-kosu.jpg",
+    "folder": "events",
+    "model": "soul_location",
+    "aspect_ratio": "16:9",
+    "width": 1920,
+    "height": 1080,
+    "prompt": "Wide shot of a wide paved path descending through a terraced city park, runners in the mid-distance seen from behind stretching and starting off, pine trees and mown lawns on both sides, empty benches, cool clear early morning light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "ev-26-plaj-voleybol",
+    "filename": "ev-26-plaj-voleybol.jpg",
+    "folder": "events",
+    "model": "soul_location",
+    "aspect_ratio": "16:9",
+    "width": 1920,
+    "height": 1080,
+    "prompt": "Wide shot of a sand volleyball court on an Aegean beach in late afternoon, a ball mid-air above the net, players in mid-motion seen from behind and in silhouette, palm trees and calm sea to one side, sponsor-free plain net, warm low golden sunlight, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "ev-27-kahve-tadim",
+    "filename": "ev-27-kahve-tadim.jpg",
+    "folder": "events",
+    "model": "soul_location",
+    "aspect_ratio": "16:9",
+    "width": 1920,
+    "height": 1080,
+    "prompt": "Overhead wide shot of a cupping table with a row of small white bowls of coffee, cupping spoons, a scale and a gooseneck kettle, scattered green and roasted coffee beans on the wood, two hands lifting a spoon at the frame edge, warm focused interior light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "ev-28-bachata",
+    "filename": "ev-28-bachata.jpg",
+    "folder": "events",
+    "model": "soul_location",
+    "aspect_ratio": "16:9",
+    "width": 1920,
+    "height": 1080,
+    "prompt": "Wide shot of a wooden-floored dance hall in the evening with several couples dancing, motion blur on their movement, faces not discernible, warm string lights and mirrored wall reflections, a speaker stand in the corner, low warm ambient light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "ev-29-kordon-bisiklet",
+    "filename": "ev-29-kordon-bisiklet.jpg",
+    "folder": "events",
+    "model": "soul_location",
+    "aspect_ratio": "16:9",
+    "width": 1920,
+    "height": 1080,
+    "prompt": "Wide shot of a palm-lined seaside boulevard in the morning, several bicycles parked along a railing facing the bay, takeaway coffee cups balanced on the railing, ferries in the distance on flat blue water, bright clean Aegean morning light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "ev-30-uludag-yuruyus",
+    "filename": "ev-30-uludag-yuruyus.jpg",
+    "folder": "events",
+    "model": "soul_location",
+    "aspect_ratio": "16:9",
+    "width": 1920,
+    "height": 1080,
+    "prompt": "Wide shot of a mountain trail crossing an alpine meadow surrounded by tall fir trees, low mist drifting between the trunks, a few hikers far ahead on the path seen from behind, granite boulders and wildflowers along the trail, cool diffused mountain light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "ev-31-konyaalti-yuzme",
+    "filename": "ev-31-konyaalti-yuzme.jpg",
+    "folder": "events",
+    "model": "soul_location",
+    "aspect_ratio": "16:9",
+    "width": 1920,
+    "height": 1080,
+    "prompt": "Wide shot of a pebble beach at sunrise with turquoise water and the silhouette of steep coastal mountains across the bay, two swimmers heads visible far out in the calm sea, towels and flip-flops on the pebbles in the foreground, soft pink-gold dawn light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "ev-32-sup-gun-dogumu",
+    "filename": "ev-32-sup-gun-dogumu.jpg",
+    "folder": "events",
+    "model": "soul_location",
+    "aspect_ratio": "16:9",
+    "width": 1920,
+    "height": 1080,
+    "prompt": "Wide shot from water level of two stand-up paddleboarders in silhouette gliding across glassy sea at sunrise, paddles mid-stroke leaving small ripples, low sun breaking over a distant headland, warm orange path of light on the water, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "po-01-elif-kupalar",
+    "filename": "po-01-elif-kupalar.jpg",
+    "folder": "posts",
+    "model": "soul_location",
+    "aspect_ratio": "1:1",
+    "width": 1440,
+    "height": 1440,
+    "prompt": "Square close-up of a shelf of freshly glazed handmade ceramic mugs in soft cream and deep blue, slight glaze drips and thumbprints visible, warm workshop light from the side, shallow depth of field, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "po-02-elif-firin",
+    "filename": "po-02-elif-firin.jpg",
+    "folder": "posts",
+    "model": "soul_location",
+    "aspect_ratio": "1:1",
+    "width": 1440,
+    "height": 1440,
+    "prompt": "Square overhead shot of hand-painted ceramic plates just out of the kiln arranged on a wooden table, each with a different naive brushwork pattern, a cotton glove and a pair of tongs beside them, warm afternoon light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "po-03-mert-ayakkabi",
+    "filename": "po-03-mert-ayakkabi.jpg",
+    "folder": "posts",
+    "model": "soul_location",
+    "aspect_ratio": "1:1",
+    "width": 1440,
+    "height": 1440,
+    "prompt": "Square top-down shot of worn running shoes on a wet seaside pavement at dawn, a sports watch resting beside them showing a blank face, puddle reflecting pale sky, cool early morning light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "po-04-mert-kosu-golge",
+    "filename": "po-04-mert-kosu-golge.jpg",
+    "folder": "posts",
+    "model": "soul_location",
+    "aspect_ratio": "1:1",
+    "width": 1440,
+    "height": 1440,
+    "prompt": "Square shot of the long shadows of a group of runners cast on a sunlit seaside promenade, only shadows and legs visible from the knees down, plane tree trunks along the path, warm low morning sun, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "po-05-zeynep-tekne",
+    "filename": "po-05-zeynep-tekne.jpg",
+    "folder": "posts",
+    "model": "soul_location",
+    "aspect_ratio": "1:1",
+    "width": 1440,
+    "height": 1440,
+    "prompt": "Square macro shot of colored pigment droplets blooming and swirling on the surface of dark marbling water, deep indigo crimson and gold veining outward, a drop of paint falling from a brush tip at the top of frame, soft diffused light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "po-06-zeynep-kuruyan",
+    "filename": "po-06-zeynep-kuruyan.jpg",
+    "folder": "posts",
+    "model": "soul_location",
+    "aspect_ratio": "1:1",
+    "width": 1440,
+    "height": 1440,
+    "prompt": "Square shot of finished marbled papers pegged on a line to dry in a workshop, each with a different swirling pattern, wooden clothespins and a whitewashed wall behind, soft window light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "po-07-can-oyun-kutu",
+    "filename": "po-07-can-oyun-kutu.jpg",
+    "folder": "posts",
+    "model": "soul_location",
+    "aspect_ratio": "1:1",
+    "width": 1440,
+    "height": 1440,
+    "prompt": "Square overhead shot of a stack of unbranded board game boxes on a wooden cafe table with loose wooden meeples and dice scattered beside them, a glass of Turkish tea at the edge, warm indoor light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "po-08-can-satranc",
+    "filename": "po-08-can-satranc.jpg",
+    "folder": "posts",
+    "model": "soul_location",
+    "aspect_ratio": "1:1",
+    "width": 1440,
+    "height": 1440,
+    "prompt": "Square close-up of a worn wooden chess set mid-game on a stone park table with a mechanical chess clock beside it, captured pieces lined up at the edge, dappled sunlight through leaves, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "po-09-selin-kitaplar",
+    "filename": "po-09-selin-kitaplar.jpg",
+    "folder": "posts",
+    "model": "soul_location",
+    "aspect_ratio": "1:1",
+    "width": 1440,
+    "height": 1440,
+    "prompt": "Square overhead shot of a small stack of well-read paperbacks with plain unmarked covers on a linen surface, a glass of Turkish tea and a pair of round glasses beside them, dried flower as a bookmark, warm afternoon window light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "po-10-selin-kulup",
+    "filename": "po-10-selin-kulup.jpg",
+    "folder": "posts",
+    "model": "soul_location",
+    "aspect_ratio": "1:1",
+    "width": 1440,
+    "height": 1440,
+    "prompt": "Square shot from behind of people sitting in a loose circle on a seaside terrace at dusk with open books on their laps, thermos and tea glasses on the stone floor between them, sea and distant skyline silhouette, warm fading light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "po-11-burak-canta",
+    "filename": "po-11-burak-canta.jpg",
+    "folder": "posts",
+    "model": "soul_location",
+    "aspect_ratio": "1:1",
+    "width": 1440,
+    "height": 1440,
+    "prompt": "Square shot of a well-used hiking backpack leaning against a mossy tree trunk at the start of a forest trail, a water bottle in the side pocket and a rolled sleeping mat on top, soft green morning light filtering through leaves, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "po-12-burak-havlu",
+    "filename": "po-12-burak-havlu.jpg",
+    "folder": "posts",
+    "model": "soul_location",
+    "aspect_ratio": "1:1",
+    "width": 1440,
+    "height": 1440,
+    "prompt": "Square shot of a damp striped towel and sandals on wet sand with fresh footprints leading toward the sea, small waves breaking in the background, cool silvery morning light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "po-13-deniz-kamera",
+    "filename": "po-13-deniz-kamera.jpg",
+    "folder": "posts",
+    "model": "soul_location",
+    "aspect_ratio": "1:1",
+    "width": 1440,
+    "height": 1440,
+    "prompt": "Square shot of a vintage 35mm film camera held at chest level from the photographer's own point of view, out-of-focus pastel timber houses of an old Istanbul street beyond it, warm late afternoon light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "po-14-deniz-negatif",
+    "filename": "po-14-deniz-negatif.jpg",
+    "folder": "posts",
+    "model": "soul_location",
+    "aspect_ratio": "1:1",
+    "width": 1440,
+    "height": 1440,
+    "prompt": "Square overhead shot of developed 35mm negative strips laid on a lightbox with a loupe resting on top, tiny street scenes visible in the frames, dust specks and fingerprints on the sleeve edges, cool clean light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "po-15-aysenur-mat",
+    "filename": "po-15-aysenur-mat.jpg",
+    "folder": "posts",
+    "model": "soul_location",
+    "aspect_ratio": "1:1",
+    "width": 1440,
+    "height": 1440,
+    "prompt": "Square shot of a single rolled-out yoga mat on a wooden waterfront deck at dawn, a folded blanket and a small cup of water beside it, mist on the calm sea beyond the railing, pale soft morning light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "po-16-aysenur-grup",
+    "filename": "po-16-aysenur-grup.jpg",
+    "folder": "posts",
+    "model": "soul_location",
+    "aspect_ratio": "1:1",
+    "width": 1440,
+    "height": 1440,
+    "prompt": "Square backlit shot of the silhouettes of several people sitting cross-legged in a row on a deck facing the sea at sunrise, shapes only, mist and warm rim light, no facial detail, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "po-17-emre-gitar",
+    "filename": "po-17-emre-gitar.jpg",
+    "folder": "posts",
+    "model": "soul_location",
+    "aspect_ratio": "1:1",
+    "width": 1440,
+    "height": 1440,
+    "prompt": "Square shot of a worn acoustic guitar resting on a stool in a courtyard with warm string lights strung above, a capo and a folded lyric sheet on the seat beside it, ivy-covered brick wall behind, warm evening light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "po-18-emre-kalabalik",
+    "filename": "po-18-emre-kalabalik.jpg",
+    "folder": "posts",
+    "model": "soul_location",
+    "aspect_ratio": "1:1",
+    "width": 1440,
+    "height": 1440,
+    "prompt": "Square shot from behind a small crowd seated on steps at night facing a dimly lit courtyard corner, phone screens and warm string lights glowing, heads in silhouette, soft motion blur, intimate night atmosphere, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "po-19-merve-sepet",
+    "filename": "po-19-merve-sepet.jpg",
+    "folder": "posts",
+    "model": "soul_location",
+    "aspect_ratio": "1:1",
+    "width": 1440,
+    "height": 1440,
+    "prompt": "Square overhead shot of a wicker picnic basket being packed on a kitchen counter with a checked cloth, thermos, cut watermelon, simit and containers of mezze, a rolled blanket beside it, bright natural light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "po-20-merve-battaniye",
+    "filename": "po-20-merve-battaniye.jpg",
+    "folder": "posts",
+    "model": "soul_location",
+    "aspect_ratio": "1:1",
+    "width": 1440,
+    "height": 1440,
+    "prompt": "Square high-angle shot of a picnic blanket on grass seen from above, plates of food glass tea cups a book and a bluetooth speaker arranged on it, bare crossed legs at the frame edges, dappled midday sun through trees, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "po-21-kerem-defter",
+    "filename": "po-21-kerem-defter.jpg",
+    "folder": "posts",
+    "model": "soul_location",
+    "aspect_ratio": "1:1",
+    "width": 1440,
+    "height": 1440,
+    "prompt": "Square overhead shot of an open notebook with handwriting blurred beyond legibility, a fountain pen, a flat white coffee and a phone face-down on a cafe table, warm side window light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "po-22-kerem-masa",
+    "filename": "po-22-kerem-masa.jpg",
+    "folder": "posts",
+    "model": "soul_location",
+    "aspect_ratio": "1:1",
+    "width": 1440,
+    "height": 1440,
+    "prompt": "Square shot of a long cafe table from table level with hands gesturing mid-conversation, coffee cups notebooks and phones scattered across the wood, faces cropped out above the frame, warm pendant lighting, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "po-23-gizem-eskiz",
+    "filename": "po-23-gizem-eskiz.jpg",
+    "folder": "posts",
+    "model": "soul_location",
+    "aspect_ratio": "1:1",
+    "width": 1440,
+    "height": 1440,
+    "prompt": "Square shot of an open sketchbook held in one hand showing a loose ink line drawing of an old timber-framed street, the real street softly out of focus beyond it, pen clipped to the page, bright morning light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "po-24-gizem-palet",
+    "filename": "po-24-gizem-palet.jpg",
+    "folder": "posts",
+    "model": "soul_location",
+    "aspect_ratio": "1:1",
+    "width": 1440,
+    "height": 1440,
+    "prompt": "Square close-up of a well-used metal watercolor palette with muddy mixed wells, two round brushes and a jar of grey water beside it on a paint-stained wooden table, even diffused daylight, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "po-25-onur-bisiklet",
+    "filename": "po-25-onur-bisiklet.jpg",
+    "folder": "posts",
+    "model": "soul_location",
+    "aspect_ratio": "1:1",
+    "width": 1440,
+    "height": 1440,
+    "prompt": "Square shot of a road bicycle leaning against a wooden lakeside railing at sunrise, still water and poplars reflected behind it, a bottle in the frame cage and a helmet hanging from the handlebar, cool golden early light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "po-26-onur-grup",
+    "filename": "po-26-onur-grup.jpg",
+    "folder": "posts",
+    "model": "soul_location",
+    "aspect_ratio": "1:1",
+    "width": 1440,
+    "height": 1440,
+    "prompt": "Square shot from behind of a line of cyclists riding away along a flat lakeside path, dust and long shadows on the gravel, poplars on both sides, warm early morning backlight, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "po-27-irem-top",
+    "filename": "po-27-irem-top.jpg",
+    "folder": "posts",
+    "model": "soul_location",
+    "aspect_ratio": "1:1",
+    "width": 1440,
+    "height": 1440,
+    "prompt": "Square close-up of a scuffed volleyball half-buried in warm beach sand with footprints around it, the base of a net post and blurred turquoise sea behind, strong late afternoon sunlight, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "po-28-irem-file",
+    "filename": "po-28-irem-file.jpg",
+    "folder": "posts",
+    "model": "soul_location",
+    "aspect_ratio": "1:1",
+    "width": 1440,
+    "height": 1440,
+    "prompt": "Square backlit shot of a beach volleyball net against a low sun, players in silhouette on the far side mid-motion, sand kicked up catching the light, warm orange golden hour glow, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "po-29-ahmet-demleme",
+    "filename": "po-29-ahmet-demleme.jpg",
+    "folder": "posts",
+    "model": "soul_location",
+    "aspect_ratio": "1:1",
+    "width": 1440,
+    "height": 1440,
+    "prompt": "Square close-up of a gooseneck kettle pouring a thin stream of water over coffee grounds in a pour-over cone, steam rising, a digital scale and scattered beans on the dark counter, warm focused interior light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "po-30-ahmet-tadim",
+    "filename": "po-30-ahmet-tadim.jpg",
+    "folder": "posts",
+    "model": "soul_location",
+    "aspect_ratio": "1:1",
+    "width": 1440,
+    "height": 1440,
+    "prompt": "Square overhead shot of a coffee cupping table with a row of small white bowls of dark coffee, cupping spoons laid across them, scattered roasted beans and a folded tasting sheet with illegible handwriting, warm wood surface, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "po-31-ceren-ayakkabi",
+    "filename": "po-31-ceren-ayakkabi.jpg",
+    "folder": "posts",
+    "model": "soul_location",
+    "aspect_ratio": "1:1",
+    "width": 1440,
+    "height": 1440,
+    "prompt": "Square shot of a pair of worn tan dance shoes placed side by side on a scuffed wooden dance floor, warm string lights out of focus in the background, soft evening interior light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "po-32-ceren-dans",
+    "filename": "po-32-ceren-dans.jpg",
+    "folder": "posts",
+    "model": "soul_location",
+    "aspect_ratio": "1:1",
+    "width": 1440,
+    "height": 1440,
+    "prompt": "Square shot of couples dancing in a warmly lit hall captured with slow-shutter motion blur, only swirling shapes of clothing and hands discernible, mirrored wall reflections, low ambient light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "po-33-yusuf-patika",
+    "filename": "po-33-yusuf-patika.jpg",
+    "folder": "posts",
+    "model": "soul_location",
+    "aspect_ratio": "1:1",
+    "width": 1440,
+    "height": 1440,
+    "prompt": "Square shot of a narrow mountain trail disappearing into mist between tall fir trees, wet stones and moss along the path, cool diffused light, deep quiet atmosphere, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "po-34-yusuf-zirve",
+    "filename": "po-34-yusuf-zirve.jpg",
+    "folder": "posts",
+    "model": "soul_location",
+    "aspect_ratio": "1:1",
+    "width": 1440,
+    "height": 1440,
+    "prompt": "Square shot of a backpack and a thermos cup set on a granite boulder at a mountain viewpoint, layered ridgelines fading into haze below, wildflowers in the foreground, bright cool daylight, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "po-35-sude-sup",
+    "filename": "po-35-sude-sup.jpg",
+    "folder": "posts",
+    "model": "soul_location",
+    "aspect_ratio": "1:1",
+    "width": 1440,
+    "height": 1440,
+    "prompt": "Square shot from above of a stand-up paddleboard floating on clear turquoise shallow water, the paddle laid across it, seabed pebbles visible through the water, bright morning sunlight and caustic light patterns, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "po-36-sude-deniz",
+    "filename": "po-36-sude-deniz.jpg",
+    "folder": "posts",
+    "model": "soul_location",
+    "aspect_ratio": "1:1",
+    "width": 1440,
+    "height": 1440,
+    "prompt": "Square shot at water level of calm turquoise sea at sunrise with the silhouette of steep coastal mountains on the horizon, gentle ripples catching pink-gold light, a single swimmer far out as a small dark point, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "st-01-elif-camur",
+    "filename": "st-01-elif-camur.jpg",
+    "folder": "stories",
+    "model": "soul_location",
+    "aspect_ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "prompt": "Vertical shot of clay-covered hands shaping wet grey clay on a spinning potter's wheel seen from the potter's own point of view, water bowl and tools at the edge, splashes of slip on the apron, warm workshop light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "st-02-mert-sahil",
+    "filename": "st-02-mert-sahil.jpg",
+    "folder": "stories",
+    "model": "soul_location",
+    "aspect_ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "prompt": "Vertical shot of an empty seaside promenade at dawn stretching into the distance, a sports watch on a wrist raised into the lower frame, calm Bosphorus water and a bridge silhouette in haze, cool blue morning light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "st-03-zeynep-ebru",
+    "filename": "st-03-zeynep-ebru.jpg",
+    "folder": "stories",
+    "model": "soul_location",
+    "aspect_ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "prompt": "Vertical close-up of a marbling tray from above with fresh indigo and crimson pigment blooming on the water surface, a stylus dragging a pattern through it, wooden tray rim at the frame edges, soft daylight, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "st-04-can-oyunlar",
+    "filename": "st-04-can-oyunlar.jpg",
+    "folder": "stories",
+    "model": "soul_location",
+    "aspect_ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "prompt": "Vertical shot looking down a long cafe table with board game boxes and components laid out ready to play, wooden tokens and dice in the foreground, warm pendant lights receding into the background, cozy evening interior, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "st-05-selin-vapur",
+    "filename": "st-05-selin-vapur.jpg",
+    "folder": "stories",
+    "model": "soul_location",
+    "aspect_ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "prompt": "Vertical shot of an open paperback held on a lap with illegible text, a ferry window beyond it framing blurred sea and seagulls, warm afternoon light falling across the page, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "st-06-burak-patika",
+    "filename": "st-06-burak-patika.jpg",
+    "folder": "stories",
+    "model": "soul_location",
+    "aspect_ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "prompt": "Vertical point-of-view shot down a forest trail with hiking boots and trail dust visible at the bottom of frame, sunlight shafts through tall trees ahead, ferns crowding the path edges, green morning light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "st-07-aysenur-gokyuzu",
+    "filename": "st-07-aysenur-gokyuzu.jpg",
+    "folder": "stories",
+    "model": "soul_location",
+    "aspect_ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "prompt": "Vertical shot from a yoga mat looking up and out over a wooden deck railing to a pale pink dawn sky and misty sea, the corner of the mat and a folded blanket in the lower frame, soft cool morning light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "st-08-emre-gitar",
+    "filename": "st-08-emre-gitar.jpg",
+    "folder": "stories",
+    "model": "soul_location",
+    "aspect_ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "prompt": "Vertical close-up of a hand pressing a chord on acoustic guitar strings, worn fretboard and a capo, warm string lights glowing out of focus behind, low evening light, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "st-09-merve-sofra",
+    "filename": "st-09-merve-sofra.jpg",
+    "folder": "stories",
+    "model": "soul_location",
+    "aspect_ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "prompt": "Vertical top-down shot of a picnic blanket spread on grass with plates of mezze, cut watermelon, simit and glass tea cups arranged across it, a bluetooth speaker and a book at the edge, dappled midday sunlight, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "st-10-kerem-kahve",
+    "filename": "st-10-kerem-kahve.jpg",
+    "folder": "stories",
+    "model": "soul_location",
+    "aspect_ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "prompt": "Vertical shot of a cafe table from above with a flat white, an open notebook with illegible handwriting, a pen and reading glasses, warm window light casting a soft shadow across the wood, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "st-11-irem-gun-batimi",
+    "filename": "st-11-irem-gun-batimi.jpg",
+    "folder": "stories",
+    "model": "soul_location",
+    "aspect_ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "prompt": "Vertical shot of a volleyball resting in warm beach sand in the foreground with a net post and the low sun behind it, turquoise sea and long shadows, strong golden hour backlight and lens flare, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  },
+  {
+    "id": "st-12-sude-sup",
+    "filename": "st-12-sude-sup.jpg",
+    "folder": "stories",
+    "model": "soul_location",
+    "aspect_ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "prompt": "Vertical shot taken from a stand-up paddleboard looking forward across glassy sea at sunrise, the nose of the board and a paddle blade in the lower frame, the sun rising over a distant headland, warm orange reflections on the water, shot on iPhone 15 Pro, natural available light, candid amateur photography, authentic imperfect composition, subtle sensor grain, true-to-life colors, no text, no lettering, no signage, no logos, no watermark"
+  }
+]
