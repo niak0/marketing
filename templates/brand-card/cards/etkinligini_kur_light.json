@@ -1,0 +1,29 @@
+{
+  "theme": "light",
+  "headline": "Aklındaki<br><em>etkinliği</em><br><em>kur.</em>",
+  "lede": "Sabah koşusu, ebru atölyesi, kahve sohbeti — <b>oluştur</b>, yakınındakiler <i>katılsın</i>.",
+  "features": [
+    {
+      "icon": "plus",
+      "tint": "blue",
+      "title": "Fikrini yaz",
+      "body": "Etkinlik adı, tarih ve yer. Dakikalar içinde hazır."
+    },
+    {
+      "icon": "pin",
+      "tint": "orange",
+      "title": "Konumunu seç",
+      "body": "Yakınındaki insanlar etkinliğini görsün."
+    },
+    {
+      "icon": "users",
+      "tint": "violet",
+      "title": "Birlikte yap",
+      "body": "Ortak ilgi alanları, gerçek buluşmalar."
+    }
+  ],
+  "cta": "Etkinlik Oluştur",
+  "tag": "#İyiTopluluklarİyiAnılarlaBaşlar",
+  "photo": "posts/2026-07-30-etkinlik-olusturma-reklam/kapak_sabah_kosusu.png",
+  "device_screenshot": "posts/2026-07-30-etkinlik-olusturma-reklam/step2_etkinlik_bilgisi_dolu.png"
+}

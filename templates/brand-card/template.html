@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<style>
+  :root {
+    --brand-blue: #0370FB;
+    --brand-orange: #FD7201;
+    --ink: #0B1220;
+    --ink-soft: #5B6472;
+    --hairline: rgba(11, 18, 32, 0.10);
+    --surface: #F4F6FA;
+  }
+
+  [data-theme="dark"] {
+    --ink: #FFFFFF;
+    --ink-soft: #A7B0BF;
+    --hairline: rgba(255, 255, 255, 0.12);
+    --surface: #0A1424;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1080px;
+    height: 1350px;
+    overflow: hidden;
+    position: relative;
+    background: var(--surface);
+    color: var(--ink);
+    font-family: -apple-system, "SF Pro Display", "Helvetica Neue",
+                 sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 660px;
+    height: 880px;
+    object-fit: cover;
+    z-index: 0;
+    -webkit-mask-image:
+      radial-gradient(
+        132% 118% at 100% 0%,
+        #000 46%,
+        rgba(0, 0, 0, 0.55) 68%,
+        transparent 86%
+      ),
+      linear-gradient(to right, transparent 0%, #000 30%);
+    -webkit-mask-composite: source-in;
+    mask-composite: intersect;
+  }
+
+  .stage {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    padding: 72px 72px 60px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .brand img { width: 62px; height: 62px; }
+
+  .brand-name {
+    font-size: 46px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  .brand-name i { color: var(--brand-orange); font-style: normal; }
+
+  h1 {
+    margin-top: 74px;
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 1.02;
+    letter-spacing: -0.035em;
+    max-width: 620px;
+  }
+
+  h1 em { color: var(--brand-blue); font-style: normal; }
+
+  .rule {
+    margin-top: 34px;
+    width: 76px;
+    height: 7px;
+    border-radius: 4px;
+    background: var(--brand-blue);
+  }
+
+  .lede {
+    margin-top: 30px;
+    max-width: 500px;
+    font-size: 31px;
+    line-height: 1.42;
+    color: var(--ink-soft);
+    font-weight: 400;
+  }
+
+  .lede b { color: var(--brand-blue); font-weight: 600; }
+  .lede i { color: var(--brand-orange); font-style: normal;
+            font-weight: 600; }
+
+  .features {
+    margin-top: 56px;
+    max-width: 520px;
+  }
+
+  .feature {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    padding: 26px 0;
+    border-bottom: 1px solid var(--hairline);
+  }
+
+  .feature:last-child { border-bottom: none; }
+
+  .feature-icon {
+    flex: 0 0 62px;
+    width: 62px;
+    height: 62px;
+    border-radius: 20px;
+    display: grid;
+    place-items: center;
+  }
+
+  .feature-icon svg { width: 30px; height: 30px; }
+
+  .feature-title {
+    font-size: 29px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  .feature-body {
+    margin-top: 6px;
+    font-size: 25px;
+    line-height: 1.38;
+    color: var(--ink-soft);
+  }
+
+  .cta {
+    margin-top: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    align-self: flex-start;
+    padding: 26px 46px 26px 26px;
+    border-radius: 999px;
+    background: var(--brand-blue);
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    box-shadow: 0 18px 40px rgba(3, 112, 251, 0.32);
+  }
+
+  .cta-glyph {
+    width: 52px;
+    height: 52px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    display: grid;
+    place-items: center;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1;
+    padding-bottom: 4px;
+  }
+
+  .footer {
+    margin-top: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    color: var(--ink-soft);
+    font-weight: 500;
+  }
+
+  .footer .tag { color: var(--brand-blue); font-weight: 600; }
+
+  .device {
+    position: absolute;
+    right: 74px;
+    bottom: 124px;
+    width: 392px;
+    border-radius: 46px;
+    overflow: hidden;
+    background: #000;
+    border: 9px solid #14171C;
+    box-shadow: 0 48px 90px rgba(6, 14, 28, 0.42),
+                0 6px 18px rgba(6, 14, 28, 0.24);
+    z-index: 3;
+  }
+
+  .device img { width: 100%; display: block; }
+</style>
+</head>
+<body data-theme="{{THEME}}">
+  {{PHOTO_BLOCK}}
+  <div class="stage">
+    <div class="brand">
+      <img src="{{LOGO_SRC}}" alt="">
+      <div class="brand-name">id<i>e</i>avoll</div>
+    </div>
+
+    <h1>{{HEADLINE}}</h1>
+    <div class="rule"></div>
+    <p class="lede">{{LEDE}}</p>
+
+    <div class="features">{{FEATURES}}</div>
+
+    <div class="cta">
+      <span class="cta-glyph">+</span>
+      <span>{{CTA}}</span>
+    </div>
+
+    <div class="footer">
+      <span>ideavoll.com</span>
+      <span class="tag">{{TAG}}</span>
+    </div>
+  </div>
+  {{DEVICE_BLOCK}}
+</body>
+</html>
