@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+{{FONT_FACES}}
+<style>
+  /* K3 — C'nin kağıt zemini, B'nin dev tipografisi (sentence case),
+     A'nın konum halkaları. Feed'de açık tonlu nefes aralığı. */
+  :root {
+    --blue: #0370FB;
+    --orange: #FD7201;
+    --ink: #101725;
+    --soft: #6B7788;
+    --paper: #EDEAE3;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1080px;
+    height: 1350px;
+    overflow: hidden;
+    position: relative;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Inter", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .rings {
+    position: absolute;
+    top: -220px;
+    right: -300px;
+    width: 1080px;
+    height: 1080px;
+    z-index: 0;
+  }
+
+  .rings div {
+    position: absolute;
+    border: 1.5px solid rgba(3, 112, 251, 0.20);
+    border-radius: 50%;
+    inset: 0;
+    margin: auto;
+  }
+
+  .r1 { width: 300px; height: 300px; }
+  .r2 { width: 590px; height: 590px; opacity: 0.72; }
+  .r3 { width: 880px; height: 880px; opacity: 0.44; }
+  .r4 { width: 1070px; height: 1070px; opacity: 0.26; }
+
+  .photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 560px;
+    height: 620px;
+    object-fit: cover;
+    z-index: 1;
+    -webkit-mask-image:
+      radial-gradient(112% 112% at 100% 0%, #000 26%, transparent 72%),
+      linear-gradient(to right, transparent 0%, #000 34%);
+    -webkit-mask-composite: source-in;
+    mask-composite: intersect;
+  }
+
+  .stage {
+    position: relative;
+    z-index: 3;
+    height: 100%;
+    padding: 70px 68px 60px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .brand { display: flex; align-items: center; gap: 15px; }
+  .brand img { width: 52px; height: 52px; }
+
+  .brand-name {
+    font-family: "Archivo", sans-serif;
+    font-size: 37px;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+  }
+
+  .brand-name i { color: var(--orange); font-style: normal; }
+
+  .stamp {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0.10em;
+    text-transform: uppercase;
+    color: var(--blue);
+    border: 2px solid var(--blue);
+    border-radius: 6px;
+    padding: 9px 15px;
+    background: rgba(237, 234, 227, 0.85);
+  }
+
+  h1 {
+    margin-top: 108px;
+    font-family: "Archivo", sans-serif;
+    font-variation-settings: "wdth" 108;
+    font-size: 116px;
+    font-weight: 900;
+    line-height: 0.9;
+    letter-spacing: -0.05em;
+    max-width: 760px;
+  }
+
+  h1 em { color: var(--blue); font-style: normal; }
+
+  .lede {
+    margin-top: 32px;
+    max-width: 600px;
+    font-size: 29px;
+    line-height: 1.44;
+    color: var(--soft);
+  }
+
+  .lede b { color: var(--ink); font-weight: 600; }
+
+  .ticket {
+    margin-top: 48px;
+    position: relative;
+    display: flex;
+    background: #FFFFFF;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 26px 56px rgba(16, 23, 37, 0.13);
+  }
+
+  .ticket-photo {
+    width: 240px;
+    flex: 0 0 240px;
+    object-fit: cover;
+  }
+
+  .ticket-body { flex: 1; padding: 30px 34px; }
+
+  .perf {
+    position: absolute;
+    left: 240px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(16, 23, 37, 0.26) 0 12px,
+      transparent 12px 26px
+    );
+    background-size: 2px 26px;
+    z-index: 3;
+  }
+
+  .perf::before, .perf::after {
+    content: "";
+    position: absolute;
+    left: -14px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--paper);
+  }
+
+  .perf::before { top: -14px; }
+  .perf::after { bottom: -14px; }
+
+  .ticket-kicker {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--orange);
+  }
+
+  .ticket-title {
+    margin-top: 10px;
+    font-family: "Archivo", sans-serif;
+    font-size: 42px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+  }
+
+  .ticket-rows { margin-top: 22px; display: grid; gap: 12px; }
+
+  .row {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 22px;
+  }
+
+  .row-key {
+    width: 124px;
+    flex: 0 0 124px;
+    color: var(--soft);
+  }
+
+  .row-dots {
+    flex: 1;
+    border-bottom: 2px dotted rgba(16, 23, 37, 0.22);
+    transform: translateY(-6px);
+  }
+
+  .row-val { font-weight: 700; color: var(--ink); }
+  .row-val.accent { color: var(--blue); }
+
+  .bottom {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    padding: 25px 44px;
+    border-radius: 999px;
+    background: var(--ink);
+    color: #FFFFFF;
+    font-family: "Archivo", sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+
+  .cta svg { width: 28px; height: 28px; }
+
+  .handle {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 21px;
+    color: var(--soft);
+  }
+</style>
+</head>
+<body>
+  <div class="rings">
+    <div class="r1"></div><div class="r2"></div>
+    <div class="r3"></div><div class="r4"></div>
+  </div>
+  {{PHOTO_BLOCK}}
+
+  <div class="stage">
+    <div class="top">
+      <div class="brand">
+        <img src="{{LOGO_SRC}}" alt="">
+        <div class="brand-name">id<i>e</i>avoll</div>
+      </div>
+      <div class="stamp">{{KICKER}}</div>
+    </div>
+
+    <h1>{{HEADLINE}}</h1>
+    <p class="lede">{{LEDE}}</p>
+
+    <div class="ticket">
+      {{TICKET_PHOTO}}
+      <div class="perf"></div>
+      <div class="ticket-body">
+        <div class="ticket-kicker">Yeni etkinlik</div>
+        <div class="ticket-title">{{EVENT_NAME}}</div>
+        <div class="ticket-rows">
+          <div class="row">
+            <span class="row-key">ne zaman</span>
+            <span class="row-dots"></span>
+            <span class="row-val">{{META_TIME}}</span>
+          </div>
+          <div class="row">
+            <span class="row-key">nerede</span>
+            <span class="row-dots"></span>
+            <span class="row-val">{{META_PLACE}}</span>
+          </div>
+          <div class="row">
+            <span class="row-key">kim var</span>
+            <span class="row-dots"></span>
+            <span class="row-val accent">{{META_PEOPLE}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <div class="cta">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff"
+             stroke-width="2.5" stroke-linecap="round">
+          <path d="M12 5v14M5 12h14"/>
+        </svg>
+        <span>{{CTA}}</span>
+      </div>
+      <div class="handle">ideavoll.com</div>
+    </div>
+  </div>
+</body>
+</html>
