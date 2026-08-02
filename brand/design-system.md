@@ -5,6 +5,12 @@ app_typography.dart) + `../../lovable/assets/logo.png`. Bu dosya, kod
 tarafındaki tema tanımının pazarlama görseli üretiminde referans alınabilecek
 özetidir — kod tarafı değişirse burası da güncellenmeli.
 
+> **Bu dosya ürünün içini anlatır.** Pazarlama içeriğinin kendi görsel dili
+> (imza öğeleri, marka renkleri, tipografi, kart çizgileri) ayrı bir dosyada:
+> **`visual-identity.md`**. Görsel üretirken önce oraya bak — renk ve
+> tipografi kararları orada, burada değil. Buradaki değerler ekran
+> görüntülerinde ve ürün anlatımında referanstır.
+
 ## Logo
 
 `brand/logo.png` — 1092×1092, PNG/RGBA, şeffaf arka plan. Görsel üretiminde

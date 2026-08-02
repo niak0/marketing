@@ -30,6 +30,13 @@ Kod: `/Volumes/Okantosh/projects/ideavoll/lovable`
 > içerik kapsamı **dışında** — bir sonraki aşamada ele alınacak. Marka tonu
 > (samimi/eğlenceli mi, ciddi mi) hâlâ net değil — bir kampanya başlamadan
 > önce bunu netleştir, tahmin etme.
+>
+> **İlk faz içerik odağı (müşteri yönü, Volkan Demir, 2026-07-30):** Büyük
+> konser/etkinlik değil, **basit/günlük bireysel etkinlikler** vurgulanacak —
+> sabah koşusu, ebru, seramik boyama gibi kolayca oluşturulabilecek/katılınacak
+> etkinlikler. Mesaj odağı: "oluştur ve katıl" basitliği. Reklam/organik
+> içerik konsept seçerken bu örneklere yakın, gösterişli olmayan senaryolar
+> tercih et.
 
 Marka renk/tipografi/logo referansı için bkz. `brand/design-system.md`
 (kod kaynağından — `../lovable/lib/core/theme/` — çıkarıldı) ve
@@ -60,6 +67,43 @@ Marka renk/tipografi/logo referansı için bkz. `brand/design-system.md`
   - `higgsfield-websites` — bu klasörde muhtemelen kullanılmayacak
 - **MCP:** kullanıcı ayrıca kuracak (Meta Ads API / Higgsfield MCP olabilir) —
   kurulunca burada bir "İlgili Araçlar" notu olarak güncelle.
+
+## İçerik Üretim Sistemi (2026-08-03)
+
+Görsel içerik artık **kodla** üretiliyor. Yeni içerik üretmeden önce
+`templates/brand-card/README.md` ve `brand/visual-identity.md` oku.
+
+**Neden kod:** AI üretiminde Türkçe karakterler ve logo bozuluyordu (bkz.
+`content-history/instagram_log.jsonl`, kayıt `2026-07-22-01`). HTML/CSS →
+Chrome ekran görüntüsü ile metin, logo ve marka renkleri her seferinde
+birebir aynı çıkıyor; üretim maliyeti de sıfır.
+
+| İhtiyaç | Komut (`templates/brand-card/` içinden) |
+|---|---|
+| Tek kart | `python3 render.py cards/<x>.json -t card_afis.html -o <çıktı>` |
+| Üç oran birden | aynı komut + `-f all` (feed 4:5, story 9:16, kare 1:1) |
+| Carousel | `python3 render_carousel.py cards/<x>.json -o <çıktı>` |
+| Animasyonlu Reel | `python3 render_reel.py cards/<x>.json -o <x>.mp4 --music <wav>` |
+
+İki kart çizgisi var: `card_afis.html` (dikkat çekici / reklam) ve
+`card_davetiye.html` (ürün anlatımı). İkisi de aynı marka imzasını taşır.
+
+**AI'ın rolü** kartların içine giren lifestyle fotoğrafları üretmekle
+sınırlı. Metin, logo ve arayüz asla AI'a çizdirilmez. Telefon mockup'ına
+daima **gerçek** uygulama ekran görüntüsü konur.
+
+## Yayınlama
+
+Instagram/Facebook yayını **elle değil**, `scripts/flows/` altındaki
+script'lerle yapılıyor (post, story, reel, Facebook post/reel, kapak/profil
+görseli). Kullanım ve ön koşullar: `scripts/flows/README.md`.
+
+- Medya public bir URL'de olmalı — Meta yerel dosya kabul etmez. Yöntem:
+  dosyayı bu repoya commit + push et, `raw.githubusercontent.com` URL'ini
+  kullan (`.gitignore` görselleri dışladığı için `git add -f` gerekir).
+- Token'lar öldüğünde (`code 190`, "could not be decrypted") ilk çalıştırılacak
+  akış: `scripts/flows/refresh-meta-tokens.sh`.
+- Her yayından sonra `content-history/instagram_log.jsonl`'a kayıt düş.
 
 ## Çalışma Kuralları
 

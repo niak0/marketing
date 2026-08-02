@@ -38,6 +38,7 @@ tekrar kullanılmış mı kontrol et.
 gerçekten yüklendiğinde `status`'u `yayında` yap ve varsa `media_ref`'i
 gerçek post linkiyle güncelle.
 
-Bu bir otomasyon sistemi değil — Instagram'a yükleme elle yapılıyor
-(bkz. proje CLAUDE.md, "İlgili Araçlar" notu). Bu dosya sadece hafıza/kayıt
-amaçlı.
+Yayınlama artık elle yapılmıyor: `scripts/flows/` altındaki script'ler
+Instagram ve Facebook'a doğrudan gönderiyor (bkz. proje CLAUDE.md,
+"Yayınlama"). Bu dosya yine de elle güncellenir — script'ler log'a kayıt
+düşmez, yayından sonra kaydı sen eklersin.
