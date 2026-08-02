@@ -29,8 +29,14 @@ PROJECT_ROOT = TEMPLATE_DIR.parents[1]
 CHROME = (
     "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 )
-CANVAS = (1080, 1350)
 SCALE = 2
+
+# Instagram/Facebook için üretilen oranlar.
+FORMATS = {
+    "feed": (1080, 1350),
+    "story": (1080, 1920),
+    "square": (1080, 1080),
+}
 
 ICONS = {
     "plus": "M12 5v14M5 12h14",
@@ -163,7 +169,7 @@ def media_blocks(card: dict) -> dict:
     }
 
 
-def build_html(card: dict, template_name: str) -> str:
+def build_html(card: dict, template_name: str, fmt: str) -> str:
     """Kart tanımını doldurulmuş HTML'e dönüştürür."""
     template = (TEMPLATE_DIR / template_name).read_text("utf-8")
     features = "".join(
@@ -175,6 +181,7 @@ def build_html(card: dict, template_name: str) -> str:
         "{{FONT_FACES}}": font_faces(),
         "{{LOGO_SRC}}": logo,
         "{{FEATURES}}": features,
+        "{{FORMAT}}": fmt,
         **media_blocks(card),
     }
     skip = {"features", "photo", "device_screenshot", "logo"}
@@ -187,7 +194,7 @@ def build_html(card: dict, template_name: str) -> str:
     return re.sub(r"\{\{[A-Z_]+\}\}", "", template)
 
 
-def shoot(html: str, output: Path) -> None:
+def shoot(html: str, output: Path, canvas: tuple[int, int]) -> None:
     """HTML'i Chrome headless ile render edip PNG olarak kaydeder."""
     with tempfile.TemporaryDirectory() as workdir:
         page = Path(workdir) / "card.html"
@@ -200,7 +207,7 @@ def shoot(html: str, output: Path) -> None:
             "--hide-scrollbars",
             "--no-sandbox",
             f"--force-device-scale-factor={SCALE}",
-            f"--window-size={CANVAS[0]},{CANVAS[1]}",
+            f"--window-size={canvas[0]},{canvas[1]}",
             f"--screenshot={raw}",
             page.as_uri(),
         ]
@@ -211,7 +218,7 @@ def shoot(html: str, output: Path) -> None:
             logger.error("Chrome çıktısı: %s", result.stderr[-800:])
             raise RuntimeError("Chrome ekran görüntüsü üretemedi.")
         with Image.open(raw) as shot:
-            shot.convert("RGB").resize(CANVAS, Image.LANCZOS).save(
+            shot.convert("RGB").resize(canvas, Image.LANCZOS).save(
                 output, "PNG"
             )
 
@@ -225,20 +232,41 @@ def main() -> None:
         "--template",
         help="HTML şablonu (varsayılan: kart JSON'undaki `template`)",
     )
+    parser.add_argument(
+        "-f",
+        "--formats",
+        default="feed",
+        help="Virgülle ayrık: feed, story, square (veya 'all')",
+    )
     args = parser.parse_args()
 
     card_path = Path(args.card)
     card = json.loads(card_path.read_text("utf-8"))
-    output = Path(args.output) if args.output else card_path.with_suffix(
-        ".png"
-    )
-    output.parent.mkdir(parents=True, exist_ok=True)
     template = (
         args.template or card.get("template") or "template.html"
     )
+    wanted = (
+        list(FORMATS)
+        if args.formats == "all"
+        else [f.strip() for f in args.formats.split(",")]
+    )
 
-    shoot(build_html(card, template), output)
-    logger.info("Kart üretildi: %s (%dx%d)", output, *CANVAS)
+    base = Path(args.output) if args.output else card_path.with_suffix(
+        ".png"
+    )
+    base.parent.mkdir(parents=True, exist_ok=True)
+
+    for fmt in wanted:
+        if fmt not in FORMATS:
+            raise SystemExit(f"Bilinmeyen format: {fmt}")
+        canvas = FORMATS[fmt]
+        target = (
+            base
+            if len(wanted) == 1
+            else base.with_name(f"{base.stem}_{fmt}{base.suffix}")
+        )
+        shoot(build_html(card, template, fmt), target, canvas)
+        logger.info("%s -> %s (%dx%d)", fmt, target, *canvas)
 
 
 if __name__ == "__main__":

@@ -11,7 +11,7 @@
     --ink: #FFFFFF;
     --soft: #93A1B8;
     --bg: #060E1C;
-    --ring: rgba(3, 112, 251, 0.30);
+    --ring: rgba(3, 112, 251, 0.42);
     --card: #101B30;
   }
 
@@ -268,9 +268,30 @@
   .cta svg { width: 30px; height: 30px; }
 
   .handle { font-size: 23px; color: #61708A; font-weight: 500; }
+
+  /* --- Format varyantları --------------------------------------- */
+  body[data-format="story"] { height: 1920px; }
+  body[data-format="square"] { height: 1080px; }
+
+  body[data-format="story"] .stage { padding: 200px 74px 244px; }
+  body[data-format="story"] h1 { font-size: 116px; }
+  body[data-format="story"] .photo { height: 760px; }
+  body[data-format="story"] .kicker { margin-top: 70px; }
+  body[data-format="story"] .ticket { margin-top: 70px; }
+
+  body[data-format="square"] .stage { padding: 54px 58px 50px; }
+  body[data-format="square"] .kicker { margin-top: 34px; }
+  body[data-format="square"] h1 { font-size: 78px; }
+  body[data-format="square"] .lede { display: none; }
+  body[data-format="square"] .ticket { margin-top: 30px; }
+  body[data-format="square"] .ticket-body { padding: 22px 28px; }
+  body[data-format="square"] .ticket-title { font-size: 36px; }
+  body[data-format="square"] .ticket-rows { margin-top: 16px; gap: 9px; }
+  body[data-format="square"] .row { font-size: 20px; }
+  body[data-format="square"] .photo { height: 430px; }
 </style>
 </head>
-<body>
+<body data-format="{{FORMAT}}">
   <div class="glow"></div>
   <div class="rings">
     <div class="r1"></div><div class="r2"></div>

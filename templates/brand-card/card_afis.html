@@ -59,15 +59,15 @@
 
   .rings div {
     position: absolute;
-    border: 1.5px solid rgba(255, 255, 255, 0.22);
+    border: 1.5px solid rgba(255, 255, 255, 0.34);
     border-radius: 50%;
     inset: 0;
     margin: auto;
   }
 
   .r1 { width: 210px; height: 210px; }
-  .r2 { width: 470px; height: 470px; opacity: 0.6; }
-  .r3 { width: 730px; height: 730px; opacity: 0.34; }
+  .r2 { width: 470px; height: 470px; opacity: 0.74; }
+  .r3 { width: 730px; height: 730px; opacity: 0.5; }
 
   .pin {
     position: absolute;
@@ -212,9 +212,30 @@
     font-weight: 500;
     color: rgba(255, 255, 255, 0.62);
   }
+
+  /* --- Format varyantları --------------------------------------- */
+  body[data-format="story"] { height: 1920px; }
+  body[data-format="square"] { height: 1080px; }
+
+  /* Story: Instagram üst/alt arayüzü için güvenli alan bırakılır */
+  body[data-format="story"] .stage { padding: 196px 66px 232px; }
+  body[data-format="story"] h1 { font-size: 132px; }
+  body[data-format="story"] .rings { top: 330px; }
+  body[data-format="story"] .pin { top: 742px; }
+
+  body[data-format="square"] .stage { padding: 54px 58px 52px; }
+  body[data-format="square"] h1 { font-size: 92px; }
+  body[data-format="square"] .lede { margin-top: 22px; font-size: 27px; }
+  body[data-format="square"] .event-strip { margin-top: 28px; }
+  body[data-format="square"] .cell { padding: 17px 26px; }
+  body[data-format="square"] .cell-value { font-size: 26px; }
+  body[data-format="square"] .bottom { margin-top: 30px; }
+  body[data-format="square"] .rings { top: 24px; width: 720px;
+                                       height: 720px; right: -220px; }
+  body[data-format="square"] .pin { top: 344px; right: 138px; }
 </style>
 </head>
-<body>
+<body data-format="{{FORMAT}}">
   {{PHOTO_BLOCK}}
   <div class="scrim"></div>
   <div class="rings">
