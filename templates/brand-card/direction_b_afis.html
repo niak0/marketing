@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+{{FONT_FACES}}
+<style>
+  :root {
+    --blue: #0370FB;
+    --orange: #FD7201;
+    --paper: #0B0B0C;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1080px;
+    height: 1350px;
+    overflow: hidden;
+    position: relative;
+    background: var(--paper);
+    color: #FFFFFF;
+    font-family: "Inter", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .photo {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+
+  .scrim {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background:
+      linear-gradient(
+        to top,
+        rgba(11, 11, 12, 0.97) 20%,
+        rgba(11, 11, 12, 0.62) 46%,
+        rgba(11, 11, 12, 0.22) 70%,
+        rgba(11, 11, 12, 0.55) 100%
+      );
+  }
+
+  .stage {
+    position: relative;
+    z-index: 3;
+    height: 100%;
+    padding: 66px 64px 60px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .brand img { width: 50px; height: 50px; }
+
+  .brand-name {
+    font-family: "Archivo", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  .brand-name i { color: var(--orange); font-style: normal; }
+
+  .today {
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--orange);
+  }
+
+  /* Signature: afiş bloğu — dev tipografi kenardan kenara */
+  h1 {
+    margin-top: auto;
+    font-family: "Archivo", sans-serif;
+    font-variation-settings: "wdth" 112;
+    font-size: 132px;
+    font-weight: 900;
+    line-height: 0.87;
+    letter-spacing: -0.045em;
+    text-transform: uppercase;
+  }
+
+  h1 em { color: var(--orange); font-style: normal; }
+
+  .lede {
+    margin-top: 32px;
+    max-width: 720px;
+    font-size: 30px;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.76);
+  }
+
+  /* Signature: afiş künyesi — sürekli tekrar eden veri şeridi */
+  .billing {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 3px solid rgba(255, 255, 255, 0.9);
+    display: flex;
+    gap: 54px;
+    align-items: flex-start;
+  }
+
+  .bill-item {
+    flex: 1;
+  }
+
+  .bill-label {
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.46);
+  }
+
+  .bill-value {
+    margin-top: 10px;
+    font-family: "Archivo", sans-serif;
+    font-size: 33px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+
+  .bill-value.accent { color: var(--orange); }
+
+  .bottom {
+    margin-top: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    padding: 24px 42px;
+    border-radius: 6px;
+    background: var(--blue);
+    font-family: "Archivo", sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+  }
+
+  .cta svg { width: 28px; height: 28px; }
+
+  .handle {
+    font-size: 23px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .device {
+    position: absolute;
+    right: 70px;
+    top: 168px;
+    width: 258px;
+    border-radius: 34px;
+    overflow: hidden;
+    background: #000;
+    border: 7px solid #17181C;
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.66);
+    transform: rotate(4.5deg);
+    z-index: 2;
+  }
+
+  .device img { width: 100%; display: block; }
+</style>
+</head>
+<body>
+  {{PHOTO_BLOCK}}
+  <div class="scrim"></div>
+  {{DEVICE_BLOCK}}
+
+  <div class="stage">
+    <div class="top">
+      <div class="brand">
+        <img src="{{LOGO_SRC}}" alt="">
+        <div class="brand-name">id<i>e</i>avoll</div>
+      </div>
+      <div class="today">{{KICKER}}</div>
+    </div>
+
+    <h1>{{HEADLINE}}</h1>
+    <p class="lede">{{LEDE}}</p>
+
+    <div class="billing">
+      <div class="bill-item">
+        <div class="bill-label">Ne zaman</div>
+        <div class="bill-value">{{META_TIME}}</div>
+      </div>
+      <div class="bill-item">
+        <div class="bill-label">Nerede</div>
+        <div class="bill-value">{{META_PLACE}}</div>
+      </div>
+      <div class="bill-item">
+        <div class="bill-label">Kim var</div>
+        <div class="bill-value accent">{{META_PEOPLE}}</div>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <div class="cta">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff"
+             stroke-width="2.6" stroke-linecap="round">
+          <path d="M12 5v14M5 12h14"/>
+        </svg>
+        <span>{{CTA}}</span>
+      </div>
+      <div class="handle">ideavoll.com</div>
+    </div>
+  </div>
+</body>
+</html>

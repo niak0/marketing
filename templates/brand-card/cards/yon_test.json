@@ -1,0 +1,33 @@
+{
+  "kicker": "5 dakika yürüme mesafende",
+  "headline": "Yarın sabah<br><em>koşuya</em><br>çıkıyoruz.",
+  "lede": "Sabah koşusu, ebru atölyesi, kahve sohbeti — <b>sen oluştur</b>, yakınındakiler katılsın.",
+  "meta_time": "Yarın 07:00",
+  "meta_place": "Caddebostan",
+  "meta_people": "6 kişi",
+  "event_name": "Sabah Koşusu",
+  "features": [
+    {
+      "icon": "plus",
+      "tint": "blue",
+      "title": "Fikrini yaz",
+      "body": "Etkinlik adı, tarih ve yer. Dakikalar içinde hazır."
+    },
+    {
+      "icon": "pin",
+      "tint": "orange",
+      "title": "Konumunu seç",
+      "body": "Yakınındaki insanlar etkinliğini görsün."
+    },
+    {
+      "icon": "users",
+      "tint": "violet",
+      "title": "Birlikte yap",
+      "body": "Ortak ilgi alanları, gerçek buluşmalar."
+    }
+  ],
+  "cta": "Etkinlik Oluştur",
+  "tag": "#ideavoll",
+  "photo": "posts/2026-07-30-etkinlik-olusturma-reklam/kapak_sabah_kosusu.png",
+  "device_screenshot": "posts/2026-07-30-etkinlik-olusturma-reklam/step2_etkinlik_bilgisi_dolu.png"
+}

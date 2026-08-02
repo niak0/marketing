@@ -14,6 +14,7 @@ import base64
 import io
 import json
 import logging
+import re
 import subprocess
 import tempfile
 from pathlib import Path
@@ -116,36 +117,74 @@ def resolve(path_value: str) -> Path:
     return path if path.is_absolute() else PROJECT_ROOT / path
 
 
-def build_html(card: dict) -> str:
-    """Kart tanımını doldurulmuş HTML'e dönüştürür."""
-    template = (TEMPLATE_DIR / "template.html").read_text("utf-8")
-    features = "".join(build_feature(f) for f in card["features"])
+def font_faces() -> str:
+    """fonts/ altındaki woff2'leri @font-face olarak gömer."""
+    font_dir = TEMPLATE_DIR / "fonts"
+    if not font_dir.is_dir():
+        return ""
+    names = {
+        "bricolage": "Bricolage Grotesque",
+        "archivo": "Archivo",
+        "space-grotesk": "Space Grotesk",
+        "inter": "Inter",
+    }
+    faces = []
+    for path in sorted(font_dir.glob("*.woff2")):
+        slug = path.stem.rsplit("-", 1)[0]
+        family = names.get(slug) or names.get(path.stem)
+        if not family:
+            continue
+        payload = base64.b64encode(path.read_bytes()).decode()
+        faces.append(
+            f"@font-face{{font-family:'{family}';"
+            f"src:url(data:font/woff2;base64,{payload}) format('woff2');"
+            "font-weight:100 900;font-display:block;}"
+        )
+    return "<style>" + "".join(faces) + "</style>"
 
-    photo_block = ""
+
+def media_blocks(card: dict) -> dict:
+    """Fotoğraf ve cihaz ekranı bloklarının HTML'ini üretir."""
+    photo = ticket = ""
     if card.get("photo"):
-        src = encode_image(resolve(card["photo"]), 1300)
-        photo_block = f'<img class="photo" src="{src}" alt="">'
+        src = encode_image(resolve(card["photo"]), 1400)
+        photo = f'<img class="photo" src="{src}" alt="">'
+        ticket = f'<img class="ticket-photo" src="{src}" alt="">'
 
-    device_block = ""
+    device = ""
     if card.get("device_screenshot"):
         src = encode_image(resolve(card["device_screenshot"]), 820)
-        device_block = f'<div class="device"><img src="{src}"></div>'
+        device = f'<div class="device"><img src="{src}"></div>'
+
+    return {
+        "{{PHOTO_BLOCK}}": photo,
+        "{{DEVICE_BLOCK}}": device,
+        "{{TICKET_PHOTO}}": ticket,
+    }
+
+
+def build_html(card: dict, template_name: str) -> str:
+    """Kart tanımını doldurulmuş HTML'e dönüştürür."""
+    template = (TEMPLATE_DIR / template_name).read_text("utf-8")
+    features = "".join(
+        build_feature(f) for f in card.get("features", [])
+    )
 
     logo = encode_logo(resolve(card.get("logo", "brand/logo.png")))
     replacements = {
-        "{{THEME}}": card.get("theme", "light"),
+        "{{FONT_FACES}}": font_faces(),
         "{{LOGO_SRC}}": logo,
-        "{{HEADLINE}}": card["headline"],
-        "{{LEDE}}": card["lede"],
         "{{FEATURES}}": features,
-        "{{CTA}}": card.get("cta", "Etkinlik Oluştur"),
-        "{{TAG}}": card.get("tag", ""),
-        "{{PHOTO_BLOCK}}": photo_block,
-        "{{DEVICE_BLOCK}}": device_block,
+        **media_blocks(card),
     }
+    skip = {"features", "photo", "device_screenshot", "logo"}
+    for key, value in card.items():
+        if key not in skip and isinstance(value, (str, int, float)):
+            replacements[f"{{{{{key.upper()}}}}}"] = str(value)
+
     for key, value in replacements.items():
         template = template.replace(key, value)
-    return template
+    return re.sub(r"\{\{[A-Z_]+\}\}", "", template)
 
 
 def shoot(html: str, output: Path) -> None:
@@ -181,6 +220,11 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("card", help="Kart tanımı (JSON)")
     parser.add_argument("-o", "--output", help="Çıktı PNG yolu")
+    parser.add_argument(
+        "-t",
+        "--template",
+        help="HTML şablonu (varsayılan: kart JSON'undaki `template`)",
+    )
     args = parser.parse_args()
 
     card_path = Path(args.card)
@@ -189,8 +233,11 @@ def main() -> None:
         ".png"
     )
     output.parent.mkdir(parents=True, exist_ok=True)
+    template = (
+        args.template or card.get("template") or "template.html"
+    )
 
-    shoot(build_html(card), output)
+    shoot(build_html(card, template), output)
     logger.info("Kart üretildi: %s (%dx%d)", output, *CANVAS)
 
 

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+{{FONT_FACES}}
+<style>
+  :root {
+    --blue: #0370FB;
+    --orange: #FD7201;
+    --ink: #10192B;
+    --soft: #6C7A90;
+    --paper: #EFEDE7;
+    --card: #FFFFFF;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1080px;
+    height: 1350px;
+    overflow: hidden;
+    position: relative;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Inter", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Signature: kağıt üstünde ince ızgara — harita defteri hissi */
+  .grid {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background-image:
+      linear-gradient(rgba(16, 25, 43, 0.055) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(16, 25, 43, 0.055) 1px, transparent 1px);
+    background-size: 54px 54px;
+  }
+
+  .stage {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    padding: 68px 68px 58px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .brand img { width: 50px; height: 50px; }
+
+  .brand-name {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 37px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+  }
+
+  .brand-name i { color: var(--orange); font-style: normal; }
+
+  .stamp {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--blue);
+    border: 2px solid var(--blue);
+    border-radius: 6px;
+    padding: 9px 16px;
+    transform: rotate(-2.5deg);
+  }
+
+  h1 {
+    margin-top: 54px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 84px;
+    font-weight: 700;
+    line-height: 1.0;
+    letter-spacing: -0.045em;
+    max-width: 800px;
+  }
+
+  h1 em { color: var(--blue); font-style: normal; }
+
+  .lede {
+    margin-top: 26px;
+    max-width: 640px;
+    font-size: 28px;
+    line-height: 1.44;
+    color: var(--soft);
+  }
+
+  .lede b { color: var(--ink); font-weight: 600; }
+
+  /* Signature: davetiye/bilet objesi, perfore kenarlı */
+  .ticket {
+    margin-top: 46px;
+    position: relative;
+    display: flex;
+    background: var(--card);
+    border-radius: 26px;
+    overflow: hidden;
+    box-shadow: 0 30px 60px rgba(16, 25, 43, 0.14),
+                0 2px 6px rgba(16, 25, 43, 0.07);
+  }
+
+  .ticket-photo {
+    width: 268px;
+    flex: 0 0 268px;
+    object-fit: cover;
+  }
+
+  .ticket-body {
+    flex: 1;
+    padding: 34px 38px;
+    position: relative;
+  }
+
+  /* perfore ayırıcı */
+  .perf {
+    position: absolute;
+    left: 268px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(16, 25, 43, 0.28) 0 12px,
+      transparent 12px 26px
+    );
+    background-size: 2px 26px;
+    z-index: 3;
+  }
+
+  .perf::before, .perf::after {
+    content: "";
+    position: absolute;
+    left: -15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--paper);
+  }
+
+  .perf::before { top: -15px; }
+  .perf::after { bottom: -15px; }
+
+  .ticket-kicker {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--orange);
+  }
+
+  .ticket-title {
+    margin-top: 12px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 46px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+  }
+
+  .ticket-rows {
+    margin-top: 26px;
+    display: grid;
+    gap: 14px;
+  }
+
+  .row {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 23px;
+  }
+
+  .row-key {
+    width: 132px;
+    flex: 0 0 132px;
+    color: var(--soft);
+    letter-spacing: 0.04em;
+  }
+
+  .row-dots {
+    flex: 1;
+    border-bottom: 2px dotted rgba(16, 25, 43, 0.24);
+    transform: translateY(-6px);
+  }
+
+  .row-val {
+    font-weight: 700;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+  }
+
+  .row-val.accent { color: var(--blue); }
+
+  .bottom {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    padding: 25px 44px;
+    border-radius: 999px;
+    background: var(--ink);
+    color: #FFFFFF;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  .cta svg { width: 28px; height: 28px; }
+
+  .handle {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 21px;
+    color: var(--soft);
+    letter-spacing: 0.02em;
+  }
+</style>
+</head>
+<body>
+  <div class="grid"></div>
+
+  <div class="stage">
+    <div class="top">
+      <div class="brand">
+        <img src="{{LOGO_SRC}}" alt="">
+        <div class="brand-name">id<i>e</i>avoll</div>
+      </div>
+      <div class="stamp">{{KICKER}}</div>
+    </div>
+
+    <h1>{{HEADLINE}}</h1>
+    <p class="lede">{{LEDE}}</p>
+
+    <div class="ticket">
+      {{TICKET_PHOTO}}
+      <div class="perf"></div>
+      <div class="ticket-body">
+        <div class="ticket-kicker">Yeni etkinlik</div>
+        <div class="ticket-title">{{EVENT_NAME}}</div>
+        <div class="ticket-rows">
+          <div class="row">
+            <span class="row-key">ne zaman</span>
+            <span class="row-dots"></span>
+            <span class="row-val">{{META_TIME}}</span>
+          </div>
+          <div class="row">
+            <span class="row-key">nerede</span>
+            <span class="row-dots"></span>
+            <span class="row-val">{{META_PLACE}}</span>
+          </div>
+          <div class="row">
+            <span class="row-key">kim var</span>
+            <span class="row-dots"></span>
+            <span class="row-val accent">{{META_PEOPLE}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <div class="cta">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff"
+             stroke-width="2.5" stroke-linecap="round">
+          <path d="M12 5v14M5 12h14"/>
+        </svg>
+        <span>{{CTA}}</span>
+      </div>
+      <div class="handle">ideavoll.com</div>
+    </div>
+  </div>
+</body>
+</html>
