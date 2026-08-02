@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+{{FONT_FACES}}
+<style>
+  /* Animasyonlu Reel (9:16). Tüm zamanlama tek değişkene bağlı:
+     --t frame zamanıdır, render_reel.py her kare için enjekte eder.
+     Her animasyon `calc(<başlangıç> - var(--t))` gecikmesiyle
+     duraklatıldığı için kare tam o ana sabitlenir. */
+  :root {
+    --t: 0ms;
+    --blue: #0370FB;
+    --orange: #FD7201;
+    --soft: #93A1B8;
+    --bg: #060E1C;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1080px;
+    height: 1920px;
+    overflow: hidden;
+    position: relative;
+    background: var(--bg);
+    color: #FFFFFF;
+    font-family: "Inter", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .photo {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    animation: kenburns 6000ms linear;
+    animation-delay: calc(0ms - var(--t));
+  }
+
+  @keyframes kenburns {
+    from { transform: scale(1.0) translateY(0); }
+    to { transform: scale(1.16) translateY(-26px); }
+  }
+
+  .scrim {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(
+      to top,
+      rgba(6, 14, 28, 0.97) 30%,
+      rgba(6, 14, 28, 0.62) 56%,
+      rgba(6, 14, 28, 0.20) 76%,
+      rgba(6, 14, 28, 0.58) 100%
+    );
+  }
+
+  .rings {
+    position: absolute;
+    top: 430px;
+    right: -230px;
+    width: 900px;
+    height: 900px;
+    z-index: 2;
+  }
+
+  .rings div {
+    position: absolute;
+    border: 1.5px solid rgba(255, 255, 255, 0.34);
+    border-radius: 50%;
+    inset: 0;
+    margin: auto;
+    animation: ripple 1400ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .r1 { width: 210px; height: 210px;
+        animation-delay: calc(300ms - var(--t)); }
+  .r2 { width: 470px; height: 470px; opacity: 0.74;
+        animation-delay: calc(480ms - var(--t)); }
+  .r3 { width: 730px; height: 730px; opacity: 0.5;
+        animation-delay: calc(660ms - var(--t)); }
+
+  @keyframes ripple {
+    from { transform: scale(0.35); opacity: 0; }
+    60% { opacity: 1; }
+    to { transform: scale(1); }
+  }
+
+  .pin {
+    position: absolute;
+    top: 842px;
+    right: 152px;
+    z-index: 3;
+    display: grid;
+    place-items: center;
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    background: var(--blue);
+    box-shadow: 0 0 0 11px rgba(3, 112, 251, 0.22),
+                0 0 0 24px rgba(3, 112, 251, 0.11);
+    animation: drop 900ms cubic-bezier(0.34, 1.56, 0.64, 1);
+    animation-delay: calc(700ms - var(--t));
+  }
+
+  @keyframes drop {
+    from { transform: translateY(-280px) scale(0.5); opacity: 0; }
+    55% { opacity: 1; }
+    to { transform: translateY(0) scale(1); opacity: 1; }
+  }
+
+  .pin svg { width: 38px; height: 38px; }
+
+  .stage {
+    position: relative;
+    z-index: 4;
+    height: 100%;
+    padding: 190px 66px 230px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    animation: rise 700ms cubic-bezier(0.22, 1, 0.36, 1);
+    animation-delay: calc(180ms - var(--t));
+  }
+
+  .brand img { width: 54px; height: 54px; }
+
+  .brand-name {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+  }
+
+  .brand-name i { color: var(--orange); font-style: normal; }
+
+  @keyframes rise {
+    from { transform: translateY(34px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+
+  h1 {
+    margin-top: auto;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 122px;
+    font-weight: 800;
+    line-height: 0.92;
+    letter-spacing: -0.05em;
+    text-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+  }
+
+  h1 span {
+    display: block;
+    animation: rise 620ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  h1 .l1 { animation-delay: calc(1280ms - var(--t)); }
+  h1 .l2 { animation-delay: calc(1460ms - var(--t));
+           color: var(--orange); }
+  h1 .l3 { animation-delay: calc(1640ms - var(--t)); }
+
+  .lede {
+    margin-top: 30px;
+    max-width: 780px;
+    font-size: 31px;
+    line-height: 1.42;
+    color: rgba(255, 255, 255, 0.82);
+    animation: rise 620ms cubic-bezier(0.22, 1, 0.36, 1);
+    animation-delay: calc(2060ms - var(--t));
+  }
+
+  .lede b { color: #FFFFFF; font-weight: 600; }
+
+  .ticket {
+    margin-top: 44px;
+    position: relative;
+    display: flex;
+    background: #101B30;
+    border: 1.5px solid rgba(255, 255, 255, 0.10);
+    border-radius: 26px;
+    overflow: hidden;
+    box-shadow: 0 34px 70px rgba(0, 0, 0, 0.55);
+    animation: slideup 760ms cubic-bezier(0.22, 1, 0.36, 1);
+    animation-delay: calc(2480ms - var(--t));
+  }
+
+  @keyframes slideup {
+    from { transform: translateY(90px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+
+  .ticket-photo {
+    width: 240px;
+    flex: 0 0 240px;
+    object-fit: cover;
+  }
+
+  .ticket-body { flex: 1; padding: 30px 34px; }
+
+  .perf {
+    position: absolute;
+    left: 240px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.26) 0 12px,
+      transparent 12px 26px
+    );
+    background-size: 2px 26px;
+    z-index: 3;
+  }
+
+  .perf::before, .perf::after {
+    content: "";
+    position: absolute;
+    left: -14px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--bg);
+  }
+
+  .perf::before { top: -14px; }
+  .perf::after { bottom: -14px; }
+
+  .ticket-kicker {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--orange);
+  }
+
+  .ticket-title {
+    margin-top: 10px;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 44px;
+    font-weight: 700;
+    letter-spacing: -0.035em;
+  }
+
+  .ticket-rows { margin-top: 22px; display: grid; gap: 12px; }
+
+  .row {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 22px;
+    animation: rise 480ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .row-a { animation-delay: calc(3080ms - var(--t)); }
+  .row-b { animation-delay: calc(3260ms - var(--t)); }
+  .row-c { animation-delay: calc(3440ms - var(--t)); }
+
+  .row-key { width: 124px; flex: 0 0 124px; color: #6B7C96; }
+
+  .row-dots {
+    flex: 1;
+    border-bottom: 2px dotted rgba(255, 255, 255, 0.22);
+    transform: translateY(-6px);
+  }
+
+  .row-val { font-weight: 700; }
+  .row-val.accent { color: var(--orange); }
+
+  .cta {
+    margin-top: 46px;
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+    align-self: flex-start;
+    padding: 26px 46px;
+    border-radius: 999px;
+    background: var(--blue);
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    box-shadow: 0 20px 46px rgba(3, 112, 251, 0.45);
+    animation: pop 900ms cubic-bezier(0.34, 1.56, 0.64, 1);
+    animation-delay: calc(3980ms - var(--t));
+  }
+
+  @keyframes pop {
+    from { transform: scale(0.82); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+
+  .cta svg { width: 30px; height: 30px; }
+
+  /* Kare yakalamanın çalışma şartı: her animasyon duraklatılmış ve
+     iki yönde de dolduruluyor olmalı. `animation` kısayolu bu iki
+     alt özelliği sıfırladığı için kural en sonda ve !important. */
+  *, *::before, *::after {
+    animation-play-state: paused !important;
+    animation-fill-mode: both !important;
+  }
+</style>
+</head>
+<body>
+  {{PHOTO_BLOCK}}
+  <div class="scrim"></div>
+  <div class="rings">
+    <div class="r1"></div><div class="r2"></div><div class="r3"></div>
+  </div>
+  <div class="pin">
+    <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"
+         stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/>
+      <circle cx="12" cy="10" r="2.5"/>
+    </svg>
+  </div>
+
+  <div class="stage">
+    <div class="brand">
+      <img src="{{LOGO_SRC}}" alt="">
+      <div class="brand-name">id<i>e</i>avoll</div>
+    </div>
+
+    <h1>
+      <span class="l1">{{LINE1}}</span>
+      <span class="l2">{{LINE2}}</span>
+      <span class="l3">{{LINE3}}</span>
+    </h1>
+
+    <p class="lede">{{LEDE}}</p>
+
+    <div class="ticket">
+      {{TICKET_PHOTO}}
+      <div class="perf"></div>
+      <div class="ticket-body">
+        <div class="ticket-kicker">Yeni etkinlik</div>
+        <div class="ticket-title">{{EVENT_NAME}}</div>
+        <div class="ticket-rows">
+          <div class="row row-a">
+            <span class="row-key">ne zaman</span>
+            <span class="row-dots"></span>
+            <span class="row-val">{{META_TIME}}</span>
+          </div>
+          <div class="row row-b">
+            <span class="row-key">nerede</span>
+            <span class="row-dots"></span>
+            <span class="row-val">{{META_PLACE}}</span>
+          </div>
+          <div class="row row-c">
+            <span class="row-key">kim var</span>
+            <span class="row-dots"></span>
+            <span class="row-val accent">{{META_PEOPLE}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#fff"
+           stroke-width="2.4" stroke-linecap="round">
+        <path d="M12 5v14M5 12h14"/>
+      </svg>
+      <span>{{CTA}}</span>
+    </div>
+  </div>
+</body>
+</html>
