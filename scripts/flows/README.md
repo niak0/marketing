@@ -51,6 +51,22 @@ olabilir.
   `./scripts/flows/publish-facebook-post.sh "<image_url>" "<caption>" [--dry-run]`
 - **Süre:** ~2-3s
 
+## publish-instagram-carousel
+- **Dosya:** `scripts/flows/publish-instagram-carousel.sh`
+- **Yapar:** 2-10 public görsel URL'ini tek bir Instagram carousel postu
+  olarak yayınlar. Üç aşamalı Graph API akışı: her slayt için
+  `is_carousel_item=true` container → `media_type=CAROUSEL` üst container
+  (children listesi + caption) → FINISHED bekle → publish.
+- **Ön koşul:** `.env` içinde `META_ACCESS_TOKEN` ve
+  `META_IG_BUSINESS_ACCOUNT_ID`. Görseller JPEG olmalı (PNG güvenilir
+  çalışmıyor) ve Instagram oran aralığında (4:5 – 1.91:1).
+- **Bırakır:** `--dry-run` olmadan çalıştırılırsa Instagram'da **gerçek,
+  canlı bir carousel postu**. `--dry-run` ile slayt container'ları ve
+  yayınlanmamış carousel container'ı bırakır (görünmez, temizlik gerekmez).
+- **Çalıştır:**
+  `./scripts/flows/publish-instagram-carousel.sh "<caption>" "<url1>" "<url2>" ... [--dry-run]`
+- **Süre:** ~10-20s (slayt sayısına bağlı)
+
 ## publish-instagram-story
 - **Dosya:** `scripts/flows/publish-instagram-story.sh`
 - **Yapar:** Public bir görsel/video URL'ini Instagram Business hesabına Story
