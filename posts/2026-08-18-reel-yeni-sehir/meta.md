@@ -73,7 +73,14 @@ varsayılan konumu; sonraki reellerde otomatik uygulanacak. Eski sürüm
 (https://www.instagram.com/reel/DcSyYA0lV1t/) ve Facebook Page Reel
 (https://www.facebook.com/reel/1055109527382657). Diğer 4 reel
 (cuma-plansiz, tek-basina-kosu, ogle-arasi, sergi-tereddut) hâlâ inceleme
-bekliyor. Bu reel'in temasıyla eşleşen bir feed postu + story
-(`kart_feed.png` / `kart_story.png`, `templates/brand-card/cards/afis_yenisehir_post.json`,
-`frame3_yakin.png` fotoğrafı reel'den yeniden kullanıldı) hazırlanıp
-kullanıcıya inceleme için gönderildi — henüz yayınlanmadı.
+bekliyor.
+
+**Yayın notu 2 (2026-08-21):** Bu reel'in temasıyla eşleşen feed postu +
+story de yayınlandı — Instagram post
+(https://www.instagram.com/p/DcUPQFegPWP/), Facebook post
+(https://www.facebook.com/1244936385362858_122109043083413455), Instagram
+Story (ID 18068281592743149, 24 saat sonra kaybolur). Görsel: `kart_feed.png`
+/ `kart_story.png` (`templates/brand-card/cards/afis_yenisehir_post.json`,
+`frame3_yakin.png` fotoğrafı reel'den yeniden kullanıldı). Caption:
+`post_caption.txt`. Aynı turda, temaca farklı bir reel de yayınlandı —
+bkz. `posts/2026-08-18-reel-tek-basina-kosu/meta.md`.
