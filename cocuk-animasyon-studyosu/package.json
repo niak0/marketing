@@ -1,9 +1,0 @@
-{
-  "name": "cocuk-animasyon-studyosu",
-  "private": true,
-  "scripts": {
-    "render": "node tools/render.js",
-    "test-kare": "node tools/render.js --test"
-  },
-  "dependencies": { "playwright": "^1.48.0" }
-}
